@@ -22,13 +22,6 @@ const sidebars = {
         "labs/hello-world/index",
       ],
     },
-    {
-      type: "category",
-      label: "Assignments",
-      items: [
-        
-      ],
-    },
   ],
   syllabus: [
     {

@@ -16,7 +16,7 @@ const config = {
   organizationName: 'IT4063C', // Usually your GitHub org/user name.
   projectName: 'IT4063C.github.io', // Usually your repo name.
   deploymentBranch: 'gh-pages',
-  trailingSlash: true,
+  trailingSlash: false,
 
   presets: [
     [
