@@ -1,0 +1,75 @@
+---
+sidebar_position: 4
+title: Grading
+---
+
+## Grading Procedure
+* Individual assignments will be graded based on:
+  * [Your self assessment and evaluation](#self-assessment-and-grading).
+  * Assignment automated tests and checks.
+  * Code and Assignment Review.
+
+* Group assignments will be graded based on:
+  * [the Team's self assessment and evaluation](#self-assessment-and-grading).
+  * Assignment automated tests and checks.
+  * Code and Assignment Review.
+  * Peer evaluation. (Further instructions will be shared)
+
+### Self Assessment and Grading
+* All assignments will have a `README.md` file at the root directory of the project.
+* On the self assessment, you're required to provide:
+  * Self-reflection
+  * Self-assessment of the grade you think you deserve with justifications.
+    * If you complete all the required items on the assignment checklist and they work, give your self the full grade.
+    * If you leave out some of the required items, or you're not sure if you satisfied all the requirements, or think you've done everything but it still doesn't work properly, deduct a few points and justify that in the comments.
+      * When grading you may receive higher grade that you gave your self 😉.
+    * If nothing works (but you tried) and we can see that you tried in the code, give your self half the points.
+    * If you say you did something when you didn't or not submit the assignment at all, you'll receive zero points for the assignment.
+      * be honest .
+      * be active.
+
+## Grade Weights
+Assignments in this course include the following:
+* **Quizzes – 10%** 
+    * Always due on Sundays.
+    * Only available until their due dates. Once it passed, it passed.
+    * Serves the purpose of collecting attendance. ensures that you're checking the course every week.
+    * Lowest quiz grade will be dropped.
+* **Labs and Assignments – 40%**
+    * Always due on Sundays.
+    * 10% will be deducted for every late day
+    * Once a solution has been posted, no work for that assignment will be accepted.
+        * you may suggest a different project to build that will illustrate your understanding.
+    * Lowest grade will be dropped.
+
+* **Midterm Project 10%**
+  * 
+* **Final Project – 30%**
+
+* **Check-in surveys – 10%**
+    * This will be to collect early feedback from you on the course.
+
+* **Extra Credit**
+    * Helping fellow classmates on MS Teams with their questions.
+    * Adding New Automated tests (When it's not a requirement already 🙄)
+    * Contributing the Labs and Syllabus Repositories with Fixes.
+
+![Assignment weights chart](/img/syllabus/grades.png)
+
+
+## Grading Scale
+
+| Letter |    Percentage    |
+|:------:|:----------------:|
+|   A    | 93.00% and above |
+|   A-   |  90.00%-92.99%   |
+|   B+   |  87.00%-89.99%   |
+|   B    |  83.00%-86.99%   |
+|   B-   |  80.00%-82.99%   |
+|   C+   |  77.00%-79.99%   |
+|   C    |  73.00%-76.99%   |
+|   C-   |  70.00%-72.99%   |
+|   D+   |  67.00%-69.99%   |
+|   D    |  63.00%-66.99%   |
+|   D-   |  60.00%-62.99%   |
+|   F    | less than 60.00% |

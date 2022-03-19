@@ -1,0 +1,306 @@
+---
+title: Git - Hello World
+sidebar_position: 1
+---
+import Icon from "@material-ui/core/Icon";
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+:::note
+This lab is compiled from multiple GitHub guides and tutorials to suit the needs of our class.
+:::
+
+## Introduction
+
+GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+
+This tutorial teaches you GitHub essentials like repositories, branches, commits, and pull requests. You'll create your own Hello World repository and learn GitHub's pull request workflow, a popular way to create and review code.
+
+In this tutorial, you will:
+* Create and use a repository
+  * Note: For most assignment, we'll be using GitHub classroom which will create the repository for you.
+* Start and manage a new branch
+* Make changes to a file and push them to GitHub as commits
+* Open and merge a pull request
+
+In this tutorial we will be editing text/markdown files. You may use GitHub Desktop, Command Line Interface (CLI), or Visual Studio Code.
+
+## Creating a repository
+
+A repository is usually used to organize a single project. Repositories can contain folders and files, images, videos, spreadsheets, and data sets -- anything your project needs. Often, repositories include a `README` file, a file with information about your project. GitHub makes it easy to add one at the same time you create your new repository. It also offers other common options such as a license file (we don't need to worry about those for now).
+
+Your `hello-world` repository can be a place where you store ideas, resources, or even share and discuss things with others.
+
+1. In the upper-right corner of any page, use the <Icon>add</Icon> drop-down menu, and select **New repository**.
+   
+   ![Drop-down with option to create a new repository](images/repo-create.png)
+2. In the **Repository name** box, enter `hello-world`.
+3. In the **Description** box, write a short description.
+4. Select **Add a README file**.
+5. Click **Create repository**.
+
+   ![Create a hello world repository](images/hello-world-repo.png)
+
+## Clone down the repository
+Now that you have a *remote* repository, we need to clone the repository to create a local repository/instance on your computer.
+You can either use GitHub Desktop, Command Line, or Visual Studio Code directly.
+
+<Tabs groupId="method">
+   <TabItem value="git-desktop" label="GitHub Desktop" default>
+      <ol>
+         <li>
+            In the File menu, click Clone Repository. <br />
+            <img alt="clone using GitHub Desktop on Mac" src={require('./images/clone-file-menu-mac.png').default} />
+         </li>
+         <li>
+            Click the tab that corresponds to the location of the repository you want to clone. You can also click URL to manually enter the repository location. <br />
+            <img alt="choose-repository-location" src={require('./images/choose-repository-location.png').default} />
+         </li>
+         <li>
+            Choose the repository you want to clone from the list. <br />
+            <img alt="clone-a-repository-list" src={require('./images/clone-a-repository-list.png').default} />
+         </li>
+         <li>
+            Click <strong>Choose...</strong> and navigate to a local path where you want to clone the repository. <br />
+            <img alt="clone-choose-button-mac" src={require('./images/clone-choose-button-mac.png').default} />
+         </li>
+         <li>
+            Click <strong>Clone</strong>.
+         </li>
+      </ol>
+   </TabItem>
+   <TabItem value="cli" label="Command Line">
+      This is covered in this video - until I type up the instructions. (The video will start at the correct time.)
+      <br />
+      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/tCYSYvLHiLE?start=124" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   </TabItem>
+   <TabItem value="vscode" label="VS Code">
+      This is covered in this video - until I type up the instructions. (The video will start at the correct time.)
+      <br />
+      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/tCYSYvLHiLE?start=303" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   </TabItem>
+</Tabs>
+
+## Branching
+
+Branching lets you have different versions of a repository at one time.
+
+By default, your repository has one branch named `main` that is considered to be the definitive branch. You can use branches to experiment and make edits before committing them to `main`.
+
+When you create a branch off the `main` branch, you're making a copy, or snapshot, of `main` as it was at that point in time. If someone else made changes to the `main` branch while you were working on your branch, you could pull in those updates.
+
+This diagram shows:
+
+* The `main` branch
+* A new branch called `feature`
+* The journey that `feature` takes before it's merged into `main`
+
+![branching diagram](images/branching.png)
+
+Have you ever saved different versions of a file? Something like:
+
+* `story.txt`
+* `story-joe-edit.txt`
+* `story-joe-edit-reviewed.txt`
+
+Branches accomplish similar goals in GitHub repositories.
+
+Developers use branches for keeping bug fixes and feature work separate from our `main` (production) branch. When a change is ready, they merge their branch into `main`.
+
+### Create a branch
+
+<Tabs groupId="method">
+   <TabItem value="git-desktop" label="GitHub Desktop">
+      <ol>
+         <li>
+            At the top of the app, click  Current Branch and then in the list of branches, click the branch that you want to base your new branch on. <br />
+            <img alt="Drop-down menu to switch your current branch" src={require('./images/select-branch-from-dropdown.png').default} />
+         </li>
+         <li>
+            Click <strong>New Branch.</strong> <br />
+            <img alt="New Branch option in the Branch menu" src={require('./images/new-branch-button-mac.png').default}/>
+         </li>
+         <li>
+            Under <strong>Name</strong>, type the name of the new branch. <strong>Name the branch <code>readme-edits</code></strong> <br />
+            <img alt="Field for creating a name for the new branch" src={require('./images/create-branch-name-mac.png').default} />
+         </li>
+         <li>
+            Use the drop-down to choose a base branch for your new branch. <br />
+            <img alt="Base branch options" src={require('./images/create-branch-choose-branch-mac.png').default}/>
+         </li>
+         <li>
+            Click <strong>Create Branch.</strong> <br />
+            <img alt="Create Branch button" src={require('./images/create-branch-button-mac.png').default}/>
+         </li>
+      </ol>
+   </TabItem>
+   <TabItem value="cli" label="Command Line">
+      <ol>
+         <li>
+            in the command line terminal, navigate to the repository directory. For example, if the my directory is <code>/Users/joe/hello-world</code>, 
+            then type to <code>cd /Users/joe/hello-world</code>.
+         </li>
+         <li>
+            type <code>git branch</code> to see a list of branches.
+         </li>
+         <li>
+            type <code>git branch readme-edits</code> to create a new branch called <code>readme-edits</code>.
+         </li>
+         <li>
+            type <code>git checkout readme-edits</code> to switch to the new branch.
+            <ul>
+               <li>
+                  You could combine the last 2 commands into a single one by typing <code>git checkout -b readme-edits</code>.
+               </li>
+            </ul>
+         </li>
+         <li>
+            type <code>git checkout main</code> to switch back to the main branch.
+         </li>
+         {/* <li>
+            type <code>git merge readme-edits</code> to merge the new branch into the main branch.
+         </li> */}
+      </ol>
+   </TabItem>
+   <TabItem value="vscode" label="Visual Studio Code">
+      <p>
+         You can create and checkout branches directly within VS code through the <strong>Git: Create Branch</strong> command
+         in the Command Palette (⇧⌘P).
+      </p>
+      <p>
+         The <strong>Git: Create Branch</strong> command lets you quickly create a new branch. Just provide the name 
+         of your new branch and VS Code will create the branch and switch to it.
+      </p>
+      <img alt="vscode-branch" src={require('./images/vscode-branching.png').default} />
+   </TabItem>
+   <TabItem value="browser" label="GitHub on Browser">
+      <ol>
+         <li>Click the <strong>code</strong> tab of your <code>hello-world</code> repository.</li>
+         <li>
+            Click the drop down at the top of the file list that says **main**.
+            <br />
+            <img alt="Branch menu" src={require('./images/branch-selection-dropdown.png').default} />
+         </li>
+         <li>Type a branch name, <code>readme-edits</code>, into the text box.</li>
+         <li>
+            Click <strong>Create branch: readme-edits from main</strong>.
+            <br />
+            <img alt="Branch menu" src={require('./images/new-branch.png').default} />
+         </li>
+      </ol>
+   </TabItem>
+</Tabs>
+
+Now you have two branches, `main` and `readme-edits`. Right now, they look exactly the same. Next you'll add changes to the new branch.
+
+## Making and committing changes
+* Make sure you've navigated to the correct branch (readme edits).
+
+* You can make and save changes to the files in your repository. In Git, saved changes are called commits. Each commit has an associated commit message, which is a description explaining why a particular change was made. Commit messages capture the history of your changes so that other contributors can understand what you've done and why.
+
+<Tabs groupId="method">
+   <TabItem value="" label="GitHub Desktop">
+      <ol>
+         <li>
+            After you make your edits to the readme.md file locally in your favourite text editor, go to your command line terminal
+         </li>
+         <li>
+            At the bottom of the list of changes, in the Summary field, type a short, meaningful commit message. Optionally, you can add more information about the change in the Description field. <br />
+            <img alt="Commit menu" src={require('./images/commit-message.png').default} />
+         </li>
+         <li>
+            Under the Description field, click <strong>Commit to <i>readme-edits</i></strong>.<br />
+            <img alt="Commit message field" src={require('./images/commit-button.png').default} />
+         </li>
+         <li>
+            Click Push origin to push your local changes to the remote repository.<br />
+            <img alt="Add all changes" src={require('./images/push-origin-button.png').default} />
+         </li>
+      </ol>
+   </TabItem>
+   <TabItem value="cli" label="Command Line">
+      <ol>
+         <li>
+            type <code>git add .</code> to add all of the files in your repository to the commit.
+         </li>
+         <li>
+            type <code>git commit -m "edited readme file"</code> to save your changes.
+         </li>
+         <li>
+            type <code>git push origin main</code> to push your changes to the remote main branch.
+         </li>
+      </ol>
+   </TabItem>
+   <TabItem value="vscode" label="Visual Studio Code">
+      <a href="https://code.visualstudio.com/docs/editor/versioncontrol#_commit">Find Instructions on VSCode Documentation page</a>
+   </TabItem>
+   <TabItem value="browser" label="GitHub on Browser">
+      <ol>
+         <li>Click the `README.md` file.</li>
+         <li>Click <Icon>edit</Icon> to edit the file.</li>
+         <li>In the editor, write a bit about yourself.</li>
+         <li>Copy and Paste the <a href="#checklist">assignment checklist</a></li>
+         <li>In the <strong>Commit changes</strong> box, write a commit message that describes your changes.</li>
+         <li>Click <strong>Commit changes</strong>.</li>
+      </ol>
+      <img ali="commit example" src={require('./images/first-commit.png').default} />
+   </TabItem>
+</Tabs>
+
+These changes will be made only to the README file on your `readme-edits` branch, so now this branch contains content that's different from `main`.
+
+## Opening a pull request
+
+Now that you have changes in a branch off of `main`, you can open a pull request.
+
+Pull requests are the heart of collaboration on GitHub. When you open a pull request, you're proposing your changes and requesting that someone review and pull in your contribution and merge them into their branch. Pull requests show diffs, or differences, of the content from both branches. The changes, additions, and subtractions are shown in different colors.
+
+As soon as you make a commit, you can open a pull request and start a discussion, even before the code is finished.
+
+By using GitHub's `@mention` feature in your pull request message, you can ask for feedback from specific people or teams, whether they're down the hall or 10 time zones away.
+
+You can even open pull requests in your own repository and merge them yourself. It's a great way to learn the GitHub flow before working on larger projects.
+
+1. Click the **Pull requests** tab of your `hello-world` repository.
+2. Click **New pull request**
+3. In the **Example Comparisons** box, select the branch you made, `readme-edits`, to compare with `main` (the original).
+4. Look over your changes in the diffs on the Compare page, make sure they're what you want to submit.
+
+   ![diff example](images/diffs.png)
+
+5. Click **Create pull request**.
+6. Give your pull request a title and write a brief description of your changes. You can include emojis and drag and drop images and gifs.
+7. Click **Create pull request**.
+
+Your collaborators can now review your edits and make suggestions.
+
+## Merging your pull request
+
+In this final step, you will merge your `readme-edits` branch into the `main` branch.
+
+1. Click **Merge pull request** to merge the changes into `main`.
+2. Click **Confirm merge**.
+3. Go ahead and delete the branch, since its changes have been incorporated, by clicking **Delete branch**.
+
+## Wrap up
+
+By completing this tutorial, you've learned to create a project and make a pull request on GitHub.
+
+* You can start adding collaborators to your project. who would follow a similar approach, of creating branches, making changes, and merging them into the main branch.
+
+Take a look at your GitHub profile and you'll see your work reflected on your contribution graph.
+
+### Checklist
+Make sure you completed the following items before you submit the assignment on Canvas:
+- [ ] Create a project on GitHub
+- [ ] Create a branch on GitHub
+- [ ] Make changes to the branch
+- [ ] Open a pull request on GitHub
+- [ ] Merge your pull request
+- [ ] Filled out the feedback form (optional)
+
+### What to submit on Canvas
+just a link to your remote repository should suffice for this lab.
+
+### Feedback form
+<iframe width="640" height= "480" src= "https://forms.office.com/Pages/ResponsePage.aspx?id=bC4i9cZf60iPA3PbGCA7Y33H7NKgRR5CkMtRYawNvXtUNjkyNjJDVktDT1QwTTRYVUpKVTZSVktVNS4u&embed=true" frameborder= "0" marginwidth= "0" marginheight= "0" style= {{border: `none`, maxWidth:`100%`, maxHeight:`100vh`}} allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>

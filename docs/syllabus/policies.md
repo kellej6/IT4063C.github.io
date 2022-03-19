@@ -1,0 +1,51 @@
+---
+sidebar_position: 3
+title: Policies
+---
+
+## Attendance/Participation Expectations
+* You are expected to attend and participate in all class activities.
+* You are responsible for maintaining a line of communication with me regarding your performance.
+* You're encouraged to help your classmates via the channel.
+  * this may count towards extra credit points when your grade needs it.
+  * If you're not sure if your help would be considered cheating/plagiarism, reach out and ask.
+
+## Communication protocols
+* I will post weekly announcements on Canvas (make sure it’s connected to your email)
+* For *assignment-related questions* please ask you questions on the MS Teams channel and engage with your fellow classmates.
+  * You're also encouraged to participate and answer any questions your fellow classmates may post on the board or on Canvas. **(this counts towards extra credit points)**
+  * When posting a question about your code, you must include:
+      * what you are trying to do
+      * what have you already tried
+      * code snippet
+        * a Screenshot may be acceptable. However, something we can copy-paste would be greatly appreciated (GitHub Gist or code sandbox) 
+* For *grading-related questions*, please email the TA and copy me on the communication.
+    * Please note `IT4063C` in the email subject.
+* For any email communication with me or the TA, make sure to:
+  * Send it FROM your School UC email.
+  * Send it TO my School UC email :) [yahya.gilany@uc.edu](mailto:yahya.gilany@uc.edu).
+* On our first meeting time (Jan 25th), please check what's underneath the first desk on my left.
+* please review my [Service Level Agreement](sla) for more (important) info about when to expect a response.
+
+## Late or Missing Policy
+* Quizzes will not be accepted (and will not be available) once the due date has passed.
+* Late work grade will be deducted 20% per day. (5 days late = 0)
+* No Exception or additional extensions will be given except for the two University-approved situations:
+  * Accommodations requested and verified in advance from the Office of Disability Services.
+  * Religious holidays, when I am notified of them in advance.
+
+## Course Evaluation
+The School of Information Technology requires that each course is evaluated each time it is taught.  The School uses a confidential web-based system, CoursEval, for these evaluations.  At the beginning of finals week,you will receive an email from the School Head, with “CoursEval” as the topic.  There is a link on that email that takes you directly to the evaluation.  The online system is anonymous.  I will receive only a summary report of combined data after final grades have been submitted.
+
+As an instructor, I greatly value your input regarding the strengths and areas for improvement of this course.  Your feedback is essential for me to continually improve instruction and provide for quality student learning and outcomes.
+## Assignment Submission Workflow and Expectations
+- Accept the GitHub Classroom assignment
+  - this will copy the starter files for the assignment to a repository named as `<assignment name>-<your github username>`
+- Clone down the project to your computer.
+- start modifying/writing your code to satisfy the assignment requirements.
+- Make sure you commit your code frequently and use a descriptive commit messages.
+  - the best practice here is to commit at the end of every complete thought. (i.e. `modified the user class to validate the age input`, `updated the self assessment in the README file`)
+- Once you're done with the assignment, confirm that you've updated the self evaluation and added any notes or reflections you had.
+- Copy the Repository link and submit to Canvas.
+
+**Remember to:** make sure your code is on GitHub and you didn't just commit it locally.
