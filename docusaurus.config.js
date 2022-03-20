@@ -27,6 +27,7 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl: 'https://github.com/IT4063C/IT4063C.github.io/tree/main/',
+          remarkPlugins: [require('mdx-mermaid')],
         },
         blog: {
           showReadingTime: true,

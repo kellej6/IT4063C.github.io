@@ -39,10 +39,11 @@ const sidebars = {
     {
       type: `category`,
       label: `Notes`,
+      link: {type: `doc`, id: "course-notes/index"},
       collapsed: false,
       items: [
-        "course-notes/index",
-        "course-notes/git/index"
+        "course-notes/git/index",
+        "course-notes/python"
       ],
     }
   ]
