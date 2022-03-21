@@ -62,6 +62,31 @@ flowchart TD
 
 ```
 
+## Course Technologies
+* There needs to be a unified framework to connect all the different technologies together (Python or other)
+
+
+* Source Version Control (git)
+* Data Sources
+  * Reading Files
+  * Relational Database
+    * MS SQL (paid)
+    * PostgreSQL (free)
+    * MySQL (free)
+  * Non-Relational Databases
+    * MongoDB (free)
+    * ElasticSearch (freemium)
+  * REST APIs
+* Data Storage
+  * Data warehouse
+* Data Pipelines
+  * ETL 
+  * Kafka
+* Visualization
+  * Python Libraries
+  * Tableau
+  * PowerBI
+
 ## Course Modules
 ### 1. Source Version Control (git)
    * Development Environment Setup
