@@ -62,6 +62,52 @@ flowchart TD
 
 ```
 
+## Data Analytics Pipeline
+```mermaid
+flowchart TB
+  START --> A[1. Capture] --> B[2. Process] --> C[3. Store] --> D[4. Analyze] --> E[5. Use] --> END
+      style START fill: #f95
+      style END fill: #f95
+
+  A --> CAPTURE
+  subgraph CAPTURE [Data Ingestion]
+    direction TB
+    A1[Cloud pub/sub]
+    A2[Data Transfer Service]
+    A3[Storage Transfer Service]
+    A1 --> A2 --> A3
+  end
+  B --> PROCESS
+  subgraph PROCESS[Streaming and Data Pipelines]
+    direction TB
+    B1[Cloud Data flow - Stream and Batch Processing]
+    B2[Cloud Data Proc - Hadoop + Spark]
+    B3[Data Prep]
+    B1 --> B2 --> B3
+  end
+  C --> STORE
+  subgraph STORE [Data Lake and Data warehousing]
+    direction TB
+    C1[Cloud Storage]
+    C2[Big Query Storage]
+    C1 --> C2
+  end
+  D --> ANALYZE
+  subgraph ANALYZE [Data Warehousing]
+    direction TB
+    D1[Big Query]
+    D2[Data Visualization]
+    D1 --> D2
+  end
+  E --> USE
+  subgraph USE [Advanced Analytics]
+    direction TB
+    E1[TensorFlow]
+  end
+
+```
+
+
 ## Course Technologies
 * There needs to be a unified framework to connect all the different technologies together (Python or other)
 
