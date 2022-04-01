@@ -4,7 +4,7 @@ title: Course Information
 ---
 
 * **Course:** [IT4063C - Data Technologies Analytics](#)
-* **Format and credit hours:** 3 credit hours; In Game Lab - Room 136.
+* **Format and credit hours:** 3 credit hours; online.
 * **Instructor:** Yahya Gilany, [yahya.gilany@uc.edu](mailto:yahya.gilany@uc.edu)
 * **Need help?**
     * If you need technical assistance, please ask you question on *[Microsoft Teams](https://teams.microsoft.com/l/channel/19%3a30e5da231a654578a9f04859d49dc410%40thread.tacv2/%25F0%259F%2586%2598%2520Help%2520-%2520Ask%2520Questions?groupId=24ca8848-d758-42dc-9a5f-85467f5ded68&tenantId=f5222e6c-5fc6-48eb-8f03-73db18203b63)*.
@@ -37,3 +37,4 @@ This course develops fundamental knowledge and skills related to data technologi
 ### You will learn how to:
 1. Use Source Version Control (Git - GitHub)
 2. Use Python for Data Analytics
+3. Use Tableau for Data Analytics

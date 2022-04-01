@@ -20,6 +20,7 @@ const sidebars = {
       label: "Labs",
       items: [
         "labs/hello-world/index",
+        "labs/data-analytics-ideas/index",
       ],
     },
   ],
