@@ -129,7 +129,7 @@ const config = {
               },
               {
                 label: 'Labs',
-                to: '/docs/labs/intro',
+                to: '/docs/labs',
               },
             ],
           },
