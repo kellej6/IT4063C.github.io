@@ -43,7 +43,22 @@ const config = {
   ],
 
   plugins: [
-    '@docusaurus/theme-live-codeblock'
+    '@docusaurus/theme-live-codeblock',
+    [
+      'content-docs',
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      ({
+        id: 'instructor',
+        path: 'instructor',
+        routeBasePath: 'instructor',
+        editUrl: 'https://github.com/IT4063C/IT4063C.github.io/tree/main/',
+        editCurrentVersion: true,
+        sidebarPath: require.resolve('./sidebarsInstructor.js'),
+        remarkPlugins: [require('mdx-mermaid')],
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+      }),
+    ],
   ],
 
   stylesheets: [
@@ -77,7 +92,7 @@ const config = {
             label: 'Syllabus',
           },
           {
-            to: '/docs/labs/intro',
+            to: '/docs/labs',
             label: 'Labs',
           },
           {
