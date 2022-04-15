@@ -16,7 +16,6 @@ moment.locale('ko', {
 
 <Calendar
   localizer={momentLocalizer(moment)}
-  date={new Date(2022, 7,21)}
   events={[
     {
       id: 0,
@@ -28,9 +27,9 @@ moment.locale('ko', {
     },
     {
       id: 1,
-      title: "Long Event",
+      title: "Week 2",
       start: new Date(2022, 7, 29),
-      end: new Date(2022, 8, 5),
+      end: new Date(2022, 8, 4),
       allDay: true,
       hexColor: `#123456`,
     },
@@ -49,5 +48,6 @@ moment.locale('ko', {
       style: newStyle,
     };
   }}
-  style={{ height: 500 }}
+  views={["month"]}
+  style={{ height: 600 }}
 />
