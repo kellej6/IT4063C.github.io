@@ -13,11 +13,20 @@
 
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
-  notes: [
-    "course-notes/index",
-    "course-notes/git/index",
-    "course-notes/python"
-  ]
+  labs: [
+    {
+      type: `category`,
+      label: `Labs`,
+      collapsed: false,
+      link: {
+        type: `doc`,
+        id: `index`
+      },
+      items:[
+        "hello-world/index",
+      ]
+    }
+  ],
 };
 
 module.exports = sidebars;

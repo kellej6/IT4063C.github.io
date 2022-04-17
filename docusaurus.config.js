@@ -30,8 +30,11 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
+          routeBasePath: '/',
           editUrl: 'https://github.com/IT4063C/IT4063C.github.io/tree/main/',
           remarkPlugins: [require('mdx-mermaid')],
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
         },
         blog: {
           showReadingTime: true,
@@ -58,6 +61,36 @@ const config = {
         editUrl: 'https://github.com/IT4063C/IT4063C.github.io/tree/main/',
         editCurrentVersion: true,
         sidebarPath: require.resolve('./sidebarsInstructor.js'),
+        remarkPlugins: [require('mdx-mermaid')],
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+      }),
+    ],
+    [
+      'content-docs',
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      ({
+        id: 'labs',
+        path: 'labs',
+        routeBasePath: 'labs',
+        editUrl: 'https://github.com/IT4063C/IT4063C.github.io/tree/main/',
+        editCurrentVersion: true,
+        sidebarPath: require.resolve('./sidebarsLabs.js'),
+        remarkPlugins: [require('mdx-mermaid')],
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+      }),
+    ],
+    [
+      'content-docs',
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      ({
+        id: 'syllabus',
+        path: 'syllabus',
+        routeBasePath: 'syllabus',
+        editUrl: 'https://github.com/IT4063C/IT4063C.github.io/tree/main/',
+        editCurrentVersion: true,
+        sidebarPath: require.resolve('./sidebarsSyllabus.js'),
         remarkPlugins: [require('mdx-mermaid')],
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
@@ -96,7 +129,7 @@ const config = {
             label: 'Syllabus',
           },
           {
-            to: '/docs/labs',
+            to: '/labs',
             label: 'Labs',
           },
           {
@@ -133,7 +166,7 @@ const config = {
               },
               {
                 label: 'Labs',
-                to: '/docs/labs',
+                to: '/labs',
               },
             ],
           },
