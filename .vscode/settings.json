@@ -1,4 +1,30 @@
 {
+  "vsicons.associations.folders": [
+    {
+      "icon": "api",
+      "extensions": [
+        "guides"
+      ]
+    },
+    {
+      "icon": "azurepipelines",
+      "extensions": [
+        "syllabus"
+      ]
+    },
+    {
+      "icon": "composer",
+      "extensions": [
+        "instructor"
+      ]
+    },
+    {
+      "icon": "component",
+      "extensions": [
+        "coursework"
+      ]
+    },
+  ],
   "workbench.colorCustomizations": {
     "activityBar.activeBackground": "#82afcd",
     "activityBar.activeBorder": "#b6498a",
