@@ -71,8 +71,8 @@ const config = {
       /** @type {import('@docusaurus/plugin-content-docs').Options} */
       ({
         id: 'labs',
-        path: 'labs',
-        routeBasePath: 'labs',
+        path: 'coursework',
+        routeBasePath: 'coursework',
         editUrl: 'https://github.com/IT4063C/IT4063C.github.io/tree/main/',
         editCurrentVersion: true,
         sidebarPath: require.resolve('./sidebarsLabs.js'),
@@ -91,6 +91,21 @@ const config = {
         editUrl: 'https://github.com/IT4063C/IT4063C.github.io/tree/main/',
         editCurrentVersion: true,
         sidebarPath: require.resolve('./sidebarsSyllabus.js'),
+        remarkPlugins: [require('mdx-mermaid')],
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+      }),
+    ],
+    [
+      'content-docs',
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      ({
+        id: 'guides',
+        path: 'guides',
+        routeBasePath: 'guides',
+        editUrl: 'https://github.com/IT4063C/IT4063C.github.io/tree/main/',
+        editCurrentVersion: true,
+        // sidebarPath: require.resolve('./sidebarsSyllabus.js'),
         remarkPlugins: [require('mdx-mermaid')],
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
@@ -125,12 +140,12 @@ const config = {
         }, 
         items: [
           {
-            to: '/docs/syllabus/info',
+            to: '/syllabus/info',
             label: 'Syllabus',
           },
           {
-            to: '/labs',
-            label: 'Labs',
+            to: '/coursework',
+            label: 'CourseWork',
           },
           {
             to: '/blog', 
@@ -141,6 +156,15 @@ const config = {
             to: '/docs/course-notes', 
             label: 'Course Notes', 
             position: 'left'
+          },
+          {
+            label: "Guides",
+            items: [
+              {
+                to: "guides/code-style-guide",
+                label: "Code Style Guide",
+              }
+            ],
           },
           {
             href: 'https://ygilany-solution-access.herokuapp.com',
@@ -162,11 +186,11 @@ const config = {
             items: [
               {
                 label: 'Syllabus',
-                to: '/docs/syllabus/info',
+                to: '/syllabus/info',
               },
               {
-                label: 'Labs',
-                to: '/labs',
+                label: 'Coursework',
+                to: '/coursework',
               },
             ],
           },
