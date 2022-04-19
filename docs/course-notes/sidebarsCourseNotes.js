@@ -14,9 +14,9 @@
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
   notes: [
-    "course-notes/index",
-    "course-notes/git/index",
-    "course-notes/python"
+    "index",
+    "git/index",
+    "python"
   ]
 };
 

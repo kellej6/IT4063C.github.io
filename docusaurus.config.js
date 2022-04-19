@@ -28,9 +28,9 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          routeBasePath: '/',
+          sidebarPath: require.resolve('./docs/course-notes/sidebarsCourseNotes.js'),
+          path: 'docs/course-notes',
+          routeBasePath: 'course-notes',
           editUrl: 'https://github.com/IT4063C/IT4063C.github.io/tree/main/',
           remarkPlugins: [require('mdx-mermaid')],
           showLastUpdateAuthor: true,
@@ -56,11 +56,11 @@ const config = {
       /** @type {import('@docusaurus/plugin-content-docs').Options} */
       ({
         id: 'instructor',
-        path: 'instructor',
+        path: 'content/instructor',
         routeBasePath: 'instructor',
         editUrl: 'https://github.com/IT4063C/IT4063C.github.io/tree/main/',
         editCurrentVersion: true,
-        sidebarPath: require.resolve('./sidebarsInstructor.js'),
+        sidebarPath: require.resolve('./content/instructor/sidebarsInstructor.js'),
         remarkPlugins: [require('mdx-mermaid')],
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
@@ -71,11 +71,11 @@ const config = {
       /** @type {import('@docusaurus/plugin-content-docs').Options} */
       ({
         id: 'labs',
-        path: 'coursework',
+        path: 'content/coursework',
         routeBasePath: 'coursework',
         editUrl: 'https://github.com/IT4063C/IT4063C.github.io/tree/main/',
         editCurrentVersion: true,
-        sidebarPath: require.resolve('./sidebarsLabs.js'),
+        sidebarPath: require.resolve('./content/coursework/sidebarsCoursework.js'),
         remarkPlugins: [require('mdx-mermaid')],
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
@@ -86,11 +86,11 @@ const config = {
       /** @type {import('@docusaurus/plugin-content-docs').Options} */
       ({
         id: 'syllabus',
-        path: 'syllabus',
+        path: 'content/syllabus',
         routeBasePath: 'syllabus',
         editUrl: 'https://github.com/IT4063C/IT4063C.github.io/tree/main/',
         editCurrentVersion: true,
-        sidebarPath: require.resolve('./sidebarsSyllabus.js'),
+        sidebarPath: require.resolve('./content/syllabus/sidebarsSyllabus.js'),
         remarkPlugins: [require('mdx-mermaid')],
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
@@ -101,7 +101,7 @@ const config = {
       /** @type {import('@docusaurus/plugin-content-docs').Options} */
       ({
         id: 'guides',
-        path: 'guides',
+        path: 'content/guides',
         routeBasePath: 'guides',
         editUrl: 'https://github.com/IT4063C/IT4063C.github.io/tree/main/',
         editCurrentVersion: true,
@@ -153,7 +153,7 @@ const config = {
             position: 'left'
           },
           {
-            to: '/docs/course-notes', 
+            to: '/course-notes', 
             label: 'Course Notes', 
             position: 'left'
           },
