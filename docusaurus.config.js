@@ -136,7 +136,7 @@ const config = {
         title: 'IT4063C',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/1643996.png',
+          src: 'img/python-analytics.png',
         }, 
         items: [
           {
