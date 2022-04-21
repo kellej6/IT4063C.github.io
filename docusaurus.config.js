@@ -105,7 +105,7 @@ const config = {
         routeBasePath: 'guides',
         editUrl: 'https://github.com/IT4063C/IT4063C.github.io/tree/main/',
         editCurrentVersion: true,
-        // sidebarPath: require.resolve('./sidebarsSyllabus.js'),
+        sidebarPath: require.resolve('./content/guides/sidebarsGuides.js'),
         remarkPlugins: [require('mdx-mermaid')],
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
@@ -161,8 +161,12 @@ const config = {
             label: "Guides",
             items: [
               {
-                to: "guides/code-style-guide",
+                to: "guides/code-style",
                 label: "Code Style Guide",
+              },
+              {
+                to: "guides/env-setup",
+                label: "Tools",
               }
             ],
           },
