@@ -4,11 +4,38 @@ import styles from './HomepageFeatures.module.css';
 
 const FeatureList = [
   {
+    title: 'Ask Questions',
+    Svg: require('../../static/img/home/undraw_questions_re_1fy7.svg').default,
+    description: (
+      <>
+        Your data analysis is as good as the questions you ask.
+      </>
+    )
+  },
+  {
+    title: 'Collect and Prepare Data',
+    Svg: require('../../static/img/home/undraw_collecting_re_lp6p.svg').default,
+    description: (
+      <>
+        Identify the datasets you need and learn to work with different data sources.
+      </>
+    )
+  },
+  {
     title: 'Data Processing',
     Svg: require('../../static/img/home/undraw_data_processing_yrrv.svg').default,
     description: (
       <>
-        Data Processing
+        Data Cleaning, Data Transformation, and Data Wrangling.
+      </>
+    ),
+  },
+  {
+    title: 'Data Storage and Warehousing',
+    Svg: require('../../static/img/home/undraw_maintenance_re_59vn.svg').default,
+    description: (
+      <>
+        Store your clean data in a secure and reliable way.
       </>
     ),
   },
@@ -17,16 +44,16 @@ const FeatureList = [
     Svg: require('../../static/img/home/undraw_analytics_re_dkf8.svg').default,
     description: (
       <>
-        We'll do something in data analytics
+        Apply different types of analytics to your data; Descriptive, Diagnostic, Predictive and Prescriptive.
       </>
     ),
   },
   {
-    title: 'Data Trends',
+    title: 'Tell A Story',
     Svg: require('../../static/img/home/undraw_data_trends_re_2cdy.svg').default,
     description: (
       <>
-        We'll analyze data trends
+        Learn to tell a story with your data.
       </>
     ),
   },
