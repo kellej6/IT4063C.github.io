@@ -145,7 +145,7 @@ const config = {
           },
           {
             to: '/coursework',
-            label: 'CourseWork',
+            label: 'Coursework',
           },
           {
             to: '/blog', 
