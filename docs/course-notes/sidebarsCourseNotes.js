@@ -15,8 +15,7 @@
 const sidebars = {
   notes: [
     "index",
-    "git/index",
-    "python"
+    "git/index"
   ]
 };
 
