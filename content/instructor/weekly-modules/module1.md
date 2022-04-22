@@ -4,6 +4,19 @@ title: 'Module 1: Env. Setup'
 sidebar_label: '1. Env. Setup'
 ---
 
+- [ ] Write the weekly announcements
+- [ ] Record a welcome video (Data, Data everywhere)
+  - How the course is structured
+  - What kinds of content should you expect
+  - How much time you have to spend on each week
+- [ ] Record a module overview video
+- [ ] Record Videos on setting up the env.
+  - Git
+  - Python3
+  - Anaconda Virtual Envirnoments
+    - Why do we use Anaconda?
+  - VSCode or different IDEs
+- [ ] Refresh on Python.
 ## Announcements
 Welcome to IT4063C! I'm excited to have you in the class and look forward to your _contributions to the learning community._
 
@@ -22,18 +35,3 @@ Good luck as you get started, and I hope you enjoy the course!
 ## Media
 
 ## Resources
-
-
-- [ ] Record a welcome video (Data, Data everywhere)
-  - How the course is structured
-  - What kinds of content should you expect
-  - How much time you have to spend on each week
-- [ ] Record a module overview video
-- [ ] Record Videos on setting up the env.
-  - Git
-  - Python3
-  - Anaconda Virtual Envirnoments
-    - Why do we use Anaconda?
-  - VSCode or different IDEs
-- [ ] Refresh on Python.
-- [ ] Write the weekly announcements
