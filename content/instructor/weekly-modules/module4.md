@@ -20,3 +20,7 @@ sidebar_label: '4. Working with Data Sources'
 
 pymongo
 https://www.mongodb.com/blog/post/getting-started-with-mongodb-pyspark-and-jupyter-notebook
+
+https://medium.com/@pragya_paudyal/connecting-mongodb-to-jupyter-notebook-e3f636a85830
+
+https://towardsdatascience.com/heres-how-to-run-sql-in-jupyter-notebooks-f26eb90f3259

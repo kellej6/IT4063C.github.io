@@ -14,3 +14,5 @@ sidebar_label: '6. Data Wrangling'
 ## Resources
 
 #### TODO
+
+https://notebook.community/fonnesbeck/scientific-python-workshop/notebooks/Data%20Wrangling%20with%20Pandas
