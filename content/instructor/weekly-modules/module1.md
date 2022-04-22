@@ -21,3 +21,18 @@ Good luck as you get started, and I hope you enjoy the course!
 ## Media
 
 ## Resources
+
+
+- [ ] Record a welcome video (Data, Data everywhere)
+  - How the course is structured
+  - What kinds of content should you expect
+  - How much time you have to spend on each week
+- [ ] Record a module overview video
+- [ ] Record Videos on setting up the env.
+  - Git
+  - Python3
+  - Anaconda Virtual Envirnoments
+    - Why do we use Anaconda?
+  - VSCode or different IDEs
+- [ ] Refresh on Python.
+- [ ] Write the weekly announcements
