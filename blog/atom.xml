@@ -2,25 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://it4063C.github.io/blog</id>
     <title>IT4063C - Data Technologies Analytics Blog</title>
-    <updated>2022-01-14T00:00:00.000Z</updated>
+    <updated>2022-01-13T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://it4063C.github.io/blog"/>
     <subtitle>IT4063C - Data Technologies Analytics Blog</subtitle>
     <icon>https://it4063C.github.io/img/1643996.png</icon>
-    <entry>
-        <title type="html"><![CDATA[Updating the README assignment checks badge]]></title>
-        <id>github-actions-badge</id>
-        <link href="https://it4063C.github.io/blog/github-actions-badge"/>
-        <updated>2022-01-14T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[In some of the assignments, you may be asked to update the badge link on the repository README file.]]></summary>
-        <content type="html"><![CDATA[<p>In some of the assignments, you may be asked to update the badge link on the repository README file. </p><ul><li>Click on the <strong>Actions</strong> Tab at the top of your repository.<ul><li><img loading="lazy" alt="image001" src="/assets/images/image001-c457e135f0879f3c1d777ad59a0cba09.png" width="937" height="299" class="img_E7b_"></li></ul></li><li>Navigate to the <strong>Assignment Checks</strong> action job.<ul><li><img loading="lazy" alt="image002" src="/assets/images/image002-a5f375a1de6a48d4c77a0b92d23d07fd.png" width="1920" height="491" class="img_E7b_"></li></ul></li><li>Copy the badge.<ul><li><img loading="lazy" alt="image003" src="/assets/images/image003-71fe039993eaa563c28bcf5f0e40192f.png" width="1271" height="589" class="img_E7b_"></li></ul></li></ul><p>P.S.: In most assignments, I created a small script that automatically updates the link for you when you install the repository's dependencies using <code>npm install</code></p>]]></content>
-        <author>
-            <name>Yahya Gilany</name>
-            <uri>https://yahya-gilany.com</uri>
-        </author>
-        <category label="github" term="github"/>
-        <category label="assignment" term="assignment"/>
-    </entry>
     <entry>
         <title type="html"><![CDATA[Visual Studio Code Settings and Extensions Sync]]></title>
         <id>vscode-extensions</id>

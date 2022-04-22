@@ -4,20 +4,10 @@
         <title>IT4063C - Data Technologies Analytics Blog</title>
         <link>https://it4063C.github.io/blog</link>
         <description>IT4063C - Data Technologies Analytics Blog</description>
-        <lastBuildDate>Fri, 14 Jan 2022 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 13 Jan 2022 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <item>
-            <title><![CDATA[Updating the README assignment checks badge]]></title>
-            <link>https://it4063C.github.io/blog/github-actions-badge</link>
-            <guid>github-actions-badge</guid>
-            <pubDate>Fri, 14 Jan 2022 00:00:00 GMT</pubDate>
-            <description><![CDATA[In some of the assignments, you may be asked to update the badge link on the repository README file.]]></description>
-            <content:encoded><![CDATA[<p>In some of the assignments, you may be asked to update the badge link on the repository README file. </p><ul><li>Click on the <strong>Actions</strong> Tab at the top of your repository.<ul><li><img loading="lazy" alt="image001" src="/assets/images/image001-c457e135f0879f3c1d777ad59a0cba09.png" width="937" height="299" class="img_E7b_"></li></ul></li><li>Navigate to the <strong>Assignment Checks</strong> action job.<ul><li><img loading="lazy" alt="image002" src="/assets/images/image002-a5f375a1de6a48d4c77a0b92d23d07fd.png" width="1920" height="491" class="img_E7b_"></li></ul></li><li>Copy the badge.<ul><li><img loading="lazy" alt="image003" src="/assets/images/image003-71fe039993eaa563c28bcf5f0e40192f.png" width="1271" height="589" class="img_E7b_"></li></ul></li></ul><p>P.S.: In most assignments, I created a small script that automatically updates the link for you when you install the repository's dependencies using <code>npm install</code></p>]]></content:encoded>
-            <category>github</category>
-            <category>assignment</category>
-        </item>
         <item>
             <title><![CDATA[Visual Studio Code Settings and Extensions Sync]]></title>
             <link>https://it4063C.github.io/blog/vscode-extensions</link>
