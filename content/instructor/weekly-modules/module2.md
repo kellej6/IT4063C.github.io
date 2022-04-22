@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
-title: 'Module 2: Data Analytics Pipeline'
+title: 'Module 2: Refreshers'
+sidebar_label: '2. Refreshers'
 ---
 ## Overview 
 

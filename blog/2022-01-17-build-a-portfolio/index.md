@@ -1,12 +1,13 @@
 ---
-slug: transfer-repo-ownership
+slug: build-a-portfolio
 title: GitHub as your Coding Portfolio (DRAFT)
 draft: true
 authors: [ygilany]
 tags: [career, git]
 ---
+<!-- TODO: update this article -->
 
-As you start applying for jobs and Co-ops in software development, you are likely to be asked during a job search to show and share your GitHub. Being that this is a recent trend in the evaluation of developers, you may wonder what employers would be looking for and what makes up a good GitHub account.
+As you start applying for jobs and Co-ops in Data Analytics, you are likely to be asked during a job search to show and share your GitHub or some sort of a Portfolio. Being that this is a recent trend in the evaluation of developers, you may wonder what employers would be looking for and what makes up a good GitHub account.
 
 - A healthy assortment of projects that are readily accessible to recruiters and hiring managers can potentially compensate for any perceived deficiencies in the other areas.
 

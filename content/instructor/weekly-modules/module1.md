@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
-title: 'Module 1: Overview'
+title: 'Module 1: Env. Setup'
+sidebar_label: '1. Env. Setup'
 ---
 
 ## Announcements

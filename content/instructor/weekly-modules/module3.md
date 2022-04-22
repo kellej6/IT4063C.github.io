@@ -1,6 +1,7 @@
 ---
 sidebar_position: 3
-title: 'Module 3:'
+title: 'Module 3: The Big Pictures + Ask'
+sidebar_label: '3. The Big Pictures + Ask'
 ---
 ## Overview 
 
