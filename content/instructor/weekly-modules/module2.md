@@ -12,6 +12,7 @@ sidebar_label: '2. Refreshers'
 ## Media
 
 ## Resources
+- [Python Ebook](https://ebooks.mobibootcamp.com/python/index.html)
 
 #### TODO
 
