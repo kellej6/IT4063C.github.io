@@ -4,11 +4,11 @@ title: 'Module 3: The Big Pictures + Ask'
 sidebar_label: '3. The Big Pictures + Ask'
 ---
 ## Overview 
+* as an analyst, you may be able to find patterns, but you may not be able to desipher what those could mean. It's important to have a subject matter expert to aid in understanding your findings
 
 ## Learning Outcomes
 
 ## Checklist 
-* Discussion Board: 
 
 #### Discussion Board - Final Project Group
 Read the introduction. Then complete Part 1 by Sep. 22nd and Part 2 by Sep. 25th.
@@ -27,9 +27,21 @@ readings:
   * What's the value for analyzing this topic
   * what do we already know and what else can be learnt?
   * What questions and data sources are thinking of
+  * Reach out to students in the university who are studying your topic
+
+
+In your response to your collegues, reflect on their projects:
+- What other areas can they research 
+- Share some data sources that could help them in their project
+- Do you know someone from that major?
 
 - During our next class session, we'll debrief this discussion. You'll also apply these ideas as you
 form your final project teams!
+
+
+OR 
+
+Bring in the outside world. Encourage students to think about how course concepts relate to current events. For example, in a supply chains course, you might ask students to find a news article related to supply chain disruptions and analyze the situation using concepts from core readings.
 
 ## Media
 
