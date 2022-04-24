@@ -9,6 +9,9 @@ id: instructor
   - what kind of questions can data help you answer. Pick a project early on in the semester, throughout the semester you'll be answering new questions based on the topic you selected for yourself. 
   - a single GitHub Repo for that, with multiple entries
 
+
+http://www.socr.umich.edu/people/dinov/2017/Spring/DSPA_HS650/DSPA_Topics.html
+
 ## Notes:
 - Learn how to record a nice course intro video like this one.
   - https://www.coursera.org/learn/data-preparation/lecture/bMOPU/introduction-to-data-exploration
