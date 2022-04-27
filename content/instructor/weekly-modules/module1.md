@@ -27,8 +27,13 @@ If you have questions about course content, please post them on Teams Forum (not
 
 Good luck as you get started, and I hope you enjoy the course!
 ## Overview 
+In the first learning module, we will learn the definition of data science and its related knowledge domains. This module will introduce the history and also the current broad applications of data science, AI, and machine learning techniques. Students will understand what jobs are available and what skill sets are sought-after by professionals in data science. 
 
 ## Learning Outcomes
+Define key terms data science and its related knowledge domains
+Understand the history and evolution of data science
+Describe the modern applications and use cases of data science
+Describe the skill sets and the job market of data science 
 
 ## Checklist 
 
