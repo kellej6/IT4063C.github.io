@@ -9,9 +9,7 @@ id: instructor
   - what kind of questions can data help you answer. Pick a project early on in the semester, throughout the semester you'll be answering new questions based on the topic you selected for yourself. 
   - a single GitHub Repo for that, with multiple entries
 	- 1 college credit represents approximately 1 hour spent in a classroom and 2 hours spent on homework each week. As such, you're expected to put in around 9 hours in this class between reviewing the videos, readings, and working on assignments.
-	- release the first 3 modules
-	
-
+	- release the first 3 modules at the same time
 
 
 http://www.socr.umich.edu/people/dinov/2017/Spring/DSPA_HS650/DSPA_Topics.html

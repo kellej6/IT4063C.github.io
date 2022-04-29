@@ -158,6 +158,11 @@ const config = {
             position: 'left'
           },
           {
+            to: '/instructor', 
+            label: '👨‍🏫', 
+            position: 'left'
+          },
+          {
             label: "Guides",
             items: [
               {
