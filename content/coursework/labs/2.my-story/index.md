@@ -1,7 +1,7 @@
 ---
 title: Tell us your Data Analytics Story
 sidebar_label: Tell your Story
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 ## Learning outcomes
