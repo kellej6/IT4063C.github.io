@@ -3,7 +3,7 @@
   "label": "Weekly Modules",
   "collapsible": true,
   "collapsed": false,
-  "className": "red",
+  "className": "something",
   "link": {
     "type": "doc",
     "id": "weekly-modules/index"
