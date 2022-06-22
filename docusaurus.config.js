@@ -70,6 +70,21 @@ const config = {
       'content-docs',
       /** @type {import('@docusaurus/plugin-content-docs').Options} */
       ({
+        id: 'ta',
+        path: 'content/ta',
+        routeBasePath: 'ta',
+        editUrl: 'https://github.com/IT4063C/IT4063C.github.io/tree/main/',
+        editCurrentVersion: true,
+        sidebarPath: require.resolve('./content/ta/sidebarsTA.js'),
+        remarkPlugins: [require('mdx-mermaid')],
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+      }),
+    ],
+    [
+      'content-docs',
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      ({
         id: 'labs',
         path: 'content/coursework',
         routeBasePath: 'coursework',
