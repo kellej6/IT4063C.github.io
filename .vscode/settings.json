@@ -45,5 +45,13 @@
     "titleBar.inactiveBackground": "#5d98bf99",
     "titleBar.inactiveForeground": "#15202b99"
   },
-  "peacock.color": "#5d98bf"
+  "peacock.color": "#5d98bf",
+  "cSpell.words": [
+    "Conda",
+    "miniconda",
+    "Netbeans",
+    "numpy",
+    "pyenv",
+    "virtualenv"
+  ]
 }
