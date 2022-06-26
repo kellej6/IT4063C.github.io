@@ -13,11 +13,11 @@
 
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
-  env: [
+  allInOne: [
     {
       type: `category`,
       label: `Environment Setup`,
-      collapsed: false,
+      collapsed: true,
       link: {
         type: `doc`,
         id: `env-setup/index`
@@ -29,9 +29,8 @@ const sidebars = {
         },
       ]
     },
-  ],
-  code: [
     'code-style',
+    'datasets'
   ]
 };
 

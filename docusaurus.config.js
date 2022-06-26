@@ -147,11 +147,11 @@ const config = {
       //   textColor: '#ffffff',
       //   isCloseable: false,
       // },
-      algolia: {
-        appId: 'FWEZXU580G',
-        apiKey: '0dc5cdf1f080b8c8be89878e5598fc45',
-        indexName: 'course-site',  
-      },
+      // algolia: {
+      //   appId: 'FWEZXU580G',
+      //   apiKey: '0dc5cdf1f080b8c8be89878e5598fc45',
+      //   indexName: 'course-site',  
+      // },
       navbar: {
         title: 'IT4063C',
         logo: {
@@ -192,6 +192,10 @@ const config = {
               {
                 to: "guides/env-setup",
                 label: "Tools",
+              },
+              {
+                to: "guides/datasets",
+                label: "Datasets",
               }
             ],
           },
