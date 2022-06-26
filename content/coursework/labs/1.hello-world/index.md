@@ -3,8 +3,6 @@ title: Git - Hello World
 sidebar_label: Overview
 sidebar_position: 1
 ---
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 
 :::note
 This lab is compiled from multiple GitHub guides and tutorials to suit the needs of our class.
