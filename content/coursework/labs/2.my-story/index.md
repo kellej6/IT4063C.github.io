@@ -9,7 +9,6 @@ sidebar_position: 4
 - Get practice in using Source Version Control (git)
 - Get practice pushing your Jupyter Notebooks to Github
 
-
 ## Background
 
 ## Guidelines
