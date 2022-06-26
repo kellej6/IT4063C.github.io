@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksite=self.webpackChunksite||[]).push([[2076],{7355:function(e,t,n){n.r(t),n.d(t,{default:function(){return u}});var i=n(67294),r=n(55257);function u(){return i.createElement(r.Z,null,i.createElement(i.Fragment,null,i.createElement("iframe",{src:"https://it4063c.github.io/Slides/",width:"400",height:"200"})))}}}]);
