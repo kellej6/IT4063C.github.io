@@ -25,3 +25,7 @@
 [data-theme='dark'] {
   --docusaurus-highlighted-code-line-bg: rgb(100, 100, 100);
 }
+
+img {
+  border:rgb(190, 188, 188) solid 1px;
+}
