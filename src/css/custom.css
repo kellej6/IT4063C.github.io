@@ -19,7 +19,7 @@
 }
 
 :root {
-  --docusaurus-highlighted-code-line-bg: rgb(176, 193, 240);
+  --docusaurus-highlighted-code-line-bg: rgb(176, 193, 240, 0.3);
 }
 
 [data-theme='dark'] {
