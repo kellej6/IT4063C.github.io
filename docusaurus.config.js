@@ -200,6 +200,10 @@ const config = {
               {
                 to: "guides/contribution",
                 label: "Contribution Guide (extra credit)",
+              },
+              {
+                to: "guides/misc",
+                label: "misc",
               }
             ],
           },
