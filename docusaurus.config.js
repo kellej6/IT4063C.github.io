@@ -196,6 +196,10 @@ const config = {
               {
                 to: "guides/datasets",
                 label: "Datasets",
+              },
+              {
+                to: "guides/contribution",
+                label: "Contribution Guide (extra credit)",
               }
             ],
           },

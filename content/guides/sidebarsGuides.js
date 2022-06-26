@@ -30,7 +30,8 @@ const sidebars = {
       ]
     },
     'code-style',
-    'datasets'
+    'datasets',
+    'contribution'
   ]
 };
 
