@@ -6,6 +6,7 @@ authors: [ygilany]
 tags: [career, git]
 ---
 <!-- TODO: update this article -->
+<!-- TODO: Mention how a student may copy over their repo to their account -->
 
 As you start applying for jobs and Co-ops in Data Analytics, you are likely to be asked during a job search to show and share your GitHub or some sort of a Portfolio. Being that this is a recent trend in the evaluation of developers, you may wonder what employers would be looking for and what makes up a good GitHub account.
 
