@@ -13,6 +13,7 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/1643996.png',
+// For GitHub Pages
   organizationName: 'IT4063C', // Usually your GitHub org/user name.
   projectName: 'IT4063C.github.io', // Usually your repo name.
   deploymentBranch: 'gh-pages',
