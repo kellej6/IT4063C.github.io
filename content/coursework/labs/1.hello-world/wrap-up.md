@@ -11,12 +11,12 @@ Take a look at your GitHub profile and you'll see your work reflected on your co
 
 ### Checklist
 Make sure you completed the following items before you submit the assignment on Canvas:
-- [ ] Create a project on GitHub
-- [ ] Create a branch on GitHub
-- [ ] Make changes to the branch
-- [ ] Open a pull request on GitHub
-- [ ] Merge your pull request
-- [ ] Filled out the feedback form (optional)
+- Create a project on GitHub
+- Create a branch on GitHub
+- Make changes to the branch
+- Open a pull request on GitHub
+- Merge your pull request
+- Filled out the feedback form (optional)
 
 ### What to submit on Canvas
 just a link to your remote repository should suffice for this lab.
