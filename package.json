@@ -30,6 +30,8 @@
     "react": "^17.0.1",
     "react-big-calendar": "^0.40.0",
     "react-dom": "^17.0.1",
+    "react-ipynb-renderer": "^0.3.0",
+    "react-jupyter-notebook": "^0.4.0",
     "reveal.js": "^4.3.1"
   },
   "devDependencies": {

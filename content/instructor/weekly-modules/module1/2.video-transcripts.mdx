@@ -2,6 +2,12 @@
 sidebar_position: 2
 title: Transcripts
 ---
+
+import JupyterViewer from "react-jupyter-notebook";
+import ipynb from "./backwards_design.json"; // You need to read the .ipynb file into a JSON Object.
+
+<JupyterViewer rawIpynb={ipynb} />
+
 ## Welcome Video
 
 Welcome to IT4063C. This is one of last course you have in the Data Analytics Track.
@@ -10,6 +16,7 @@ I'm Yahya Gilany. I'm a faculty at the School of Information Technology, and the
 Currently, I lead the development of a software eco-system built for the ohio criminal sentencing commission and the state of ohio supreme court. The system will be used to collect sentencing data from the courts and judges and provide a way to tell the story of sentencing in the state of ohio.
 
 I have 2 objectives for you in this course:
+
 1. to piece together all what you've learned in the track so far. Frame it together in a nice framework that you can apply to your future data analytics projects.
 2. Introduce and re-introduce a number of tools and technologies.
 
@@ -21,37 +28,39 @@ I've always had a keen interest in machine learning and in building this course,
 
 I'm looking forward to working with you all this semester. I hope you're excited for this class too.
 
-___________________________
+---
 
 ## Tools when setting up a development environment
+
 In the spirit of this course name I want to talk about the different tools and technologies that we use in setting up our developement env.. You may already have a development env setup
 but knowing and understanding the different functionality of the tools you're using will help you create the most optimized envirnoment, and allow you to change tools as new ones are developed.
 
 Without further Ado, Let's get to it.
 
 ### Python
+
 Now obviosuly we're using python as out main programming language in this course. It's one of the most common langauges used for the purposes of data analytics. R being the other option.
 Like any software, python is continiously updated with security patches, performacne optimizations, and even new functionality.
 [what's new in each version](https://docs.python.org/3/whatsnew/index.html)
 when you started the program, you may have used version 3.4.0, now (at the time of recording this), we are at version 3.10.5. In the semver Video, I talk about the meaning of those numbers,
-and what those numbers might mean for you when you're developing your systems. 
+and what those numbers might mean for you when you're developing your systems.
 Now at one point, you may have used version 2 in building a piece of code, and on your newer projects, you used 3.4.0, and on an even newer project. \
 Now depending on what language features, you may be able to have one installation of python that would be able to run all version. (but don't count on it)
-But also the alternative, is to uninstall python and reinstall it over and over again depending on the project you're using for the day. 
+But also the alternative, is to uninstall python and reinstall it over and over again depending on the project you're using for the day.
 
 This is why we employ virtualization tools or Virtual env tools. Let's continue this, in the next video.
 
-
 ### PyEnv
-Now like we said, python have multiple versions, each version has certain features, and so on. 
+
+Now like we said, python have multiple versions, each version has certain features, and so on.
 This might mean that every time you work on a different projects, that uses a different version, you may need to reinstall python with the appropriate version. That's ridiculous. No one want to work like that.
 
 For that reason, we use something like pyenv
 
 Pyenv Simple Python Version Management tool. it lets you change the global Python version, install multiple Python versions. so on the same device you may have 3.4, 3.7, and 3.10.
 
-
 ### Pip
+
 Many developers, computer scientists, data analysts and so on have already developed many tools and functions and packaged it into libraries that we can install, use and reuse. Rather, than always starting from scratch, you want to use those tools.
 One of the ways you can install those libraries, is Package-Installer-for-Python or (PIP).
 it is the de facto and recommended package-management system used to install and manage software packages.
@@ -59,7 +68,8 @@ it is the de facto and recommended package-management system used to install and
 Whenever you get an error that a package is not found, you'd want to `pip install <said-package>`
 
 ### VirtualEnvs
-With that you still have a tiny problem. Now, whenever you install a certain dependency or package through pip. That's installed globally for the entire environment. That's just the way that works for python. You install a python version, it's for the whole computer, download a dependency, it's till for the whole computer. 
+
+With that you still have a tiny problem. Now, whenever you install a certain dependency or package through pip. That's installed globally for the entire environment. That's just the way that works for python. You install a python version, it's for the whole computer, download a dependency, it's till for the whole computer.
 Now, you may be working on multiple projects, thankfully, all of them are running the same version of python. You're running 3.10.4 . However, certain project uses version x from the package numpy, and the other is using version y. Every time you switch between these 2 projects, you need to install the packages again, for that project.
 
 Enter VirtualEnv. Which I would be using it along side pyenv through a wrapper tool called pyenv-virtualenv plugin to manage multiple versions of python and seamlessly integrate them with your projects' virtual environments. Now I can have a different environment for each project, which with it's own set of packages and dependencies.
@@ -67,21 +77,20 @@ Enter VirtualEnv. Which I would be using it along side pyenv through a wrapper t
 https://www.geeksforgeeks.org/creating-python-virtual-environment-windows-linux/
 https://docs.python.org/3/library/venv.html
 
-
-
-So far in the program, whenever you need to work on a python project for data analysis purposes, you were told to use Anaconda and Jupyter notebook. 
+So far in the program, whenever you need to work on a python project for data analysis purposes, you were told to use Anaconda and Jupyter notebook.
 
 You've heard of anaconda in your career so far in the data analytics program. You can still use that in this class. I just need to reintroduce you to it and explain what it actually means to be using it. I will also show you other alternatives that you can also use (and I will be using in this class)
 
 ## IDE
+
 I've reviewed many resumes that would list things like NetBeans, Eclipse, Visual Studio and other IDEs like that under their technical skills. When I asked those candidates about those skills they would start talking about the language they coded on those IDEs. The Netbeans, or eclipse people would talk about Java, Visual Studio would talk about C++ or C# or whatever they used there.
 
-I want to make clear that these are just Development tools that allows you to use those environments. 
+I want to make clear that these are just Development tools that allows you to use those environments.
 
 ### Poetry
-a great other tool for PACKAGING AND DEPENDENCY MANAGEMENT is poetry. I will actually be using this. and recommend you do too. 
-This will mean that for projects that I would share with other developers, I would prepackage my dependencies and all they need to do is run poetry install, and they get the same exact setup for their environment as mine. 
 
+a great other tool for PACKAGING AND DEPENDENCY MANAGEMENT is poetry. I will actually be using this. and recommend you do too.
+This will mean that for projects that I would share with other developers, I would prepackage my dependencies and all they need to do is run poetry install, and they get the same exact setup for their environment as mine.
 
 ### Conda and Anaconda
 
@@ -89,11 +98,12 @@ But what about anaconda, or conda, or miniconda. This is a system that does (pac
 
 This Anaconda thing also comes with Jupyter Notebook and bunch of other tools and utilities.
 
-One big problem with it though, is that it comes with a bunch of other tools and utilities. It bloats your system with a lot of things that you don't really need. 
+One big problem with it though, is that it comes with a bunch of other tools and utilities. It bloats your system with a lot of things that you don't really need.
 
 Which is why I use the other tools. Now, I showed how I have my env. setup. You may choose to use my setup, or stick to anaconda.
 
-___________________________
+---
 
 ## SemVer
+
 https://semver.org
