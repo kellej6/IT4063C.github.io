@@ -3,7 +3,7 @@ help:
 
 test:
 	nbdoc_test
-	yarn run build
+	npm run build
 
 watch:
 	watchmedo shell-command --command nbdoc_build --pattern="*.ipynb" --recursive --drop
@@ -19,9 +19,7 @@ update: .FORCE
 	nbdoc_build
 
 install: .FORCE
-	npm install -g npm@">=8.4.1"
-	npm install --global yarn
-	yarn install --frozen-lockfile
+	npm install -g npm@">=8.14.0"
 	pip install -Ur requirements.txt
 	jupyter labextension install @jupyterlab/vega5-extension
 
