@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksite=self.webpackChunksite||[]).push([[8554],{6853:e=>{e.exports=JSON.parse('{"title":"Labs","slug":"/category/labs","permalink":"/coursework/category/labs","navigation":{"previous":{"title":"\ud83e\udd89 Coursework","permalink":"/coursework/"},"next":{"title":"Overview","permalink":"/coursework/labs/hello-world/"}}}')}}]);
