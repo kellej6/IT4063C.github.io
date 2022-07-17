@@ -1,128 +1,133 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const lightCodeTheme = require("prism-react-renderer/themes/github");
+const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'IT4063C - Data Technologies Analytics',
-  tagline: 'Yahya Gilany',
-  url: 'https://it4063C.github.io/',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/1643996.png',
-// For GitHub Pages
-  organizationName: 'IT4063C', // Usually your GitHub org/user name.
-  projectName: 'IT4063C.github.io', // Usually your repo name.
-  deploymentBranch: 'gh-pages',
+  title: "IT4063C - Data Technologies Analytics",
+  tagline: "Yahya Gilany",
+  url: "https://it4063C.github.io/",
+  baseUrl: "/",
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
+  favicon: "img/1643996.png",
+  // For GitHub Pages
+  organizationName: "IT4063C", // Usually your GitHub org/user name.
+  projectName: "IT4063C.github.io", // Usually your repo name.
+  deploymentBranch: "gh-pages",
   trailingSlash: false,
 
   customFields: {
-    classType: `online`
+    classType: `online`,
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./docs/course-notes/sidebarsCourseNotes.js'),
-          path: 'docs/course-notes',
-          routeBasePath: 'course-notes',
-          editUrl: 'https://github.com/IT4063C/IT4063C.github.io/tree/main/',
-          remarkPlugins: [require('mdx-mermaid')],
+          sidebarPath: require.resolve(
+            "./docs/course-notes/sidebarsCourseNotes.js"
+          ),
+          path: "docs/course-notes",
+          routeBasePath: "course-notes",
+          editUrl: "https://github.com/IT4063C/IT4063C.github.io/tree/main/",
+          remarkPlugins: [require("mdx-mermaid")],
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/IT4063C/IT4063C.github.io/tree/main/',
+          editUrl: "https://github.com/IT4063C/IT4063C.github.io/tree/main/",
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       }),
     ],
   ],
 
   plugins: [
-    '@docusaurus/theme-live-codeblock',
+    "@docusaurus/theme-live-codeblock",
     [
-      'content-docs',
+      "content-docs",
       /** @type {import('@docusaurus/plugin-content-docs').Options} */
       ({
-        id: 'instructor',
-        path: 'content/instructor',
-        routeBasePath: 'instructor',
-        editUrl: 'https://github.com/IT4063C/IT4063C.github.io/tree/main/',
+        id: "instructor",
+        path: "content/instructor",
+        routeBasePath: "instructor",
+        editUrl: "https://github.com/IT4063C/IT4063C.github.io/tree/main/",
         editCurrentVersion: true,
-        sidebarPath: require.resolve('./content/instructor/sidebarsInstructor.js'),
-        remarkPlugins: [require('mdx-mermaid')],
+        sidebarPath: require.resolve(
+          "./content/instructor/sidebarsInstructor.js"
+        ),
+        remarkPlugins: [require("mdx-mermaid")],
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
       }),
     ],
     [
-      'content-docs',
+      "content-docs",
       /** @type {import('@docusaurus/plugin-content-docs').Options} */
       ({
-        id: 'ta',
-        path: 'content/ta',
-        routeBasePath: 'ta',
-        editUrl: 'https://github.com/IT4063C/IT4063C.github.io/tree/main/',
+        id: "ta",
+        path: "content/ta",
+        routeBasePath: "ta",
+        editUrl: "https://github.com/IT4063C/IT4063C.github.io/tree/main/",
         editCurrentVersion: true,
-        sidebarPath: require.resolve('./content/ta/sidebarsTA.js'),
-        remarkPlugins: [require('mdx-mermaid')],
+        sidebarPath: require.resolve("./content/ta/sidebarsTA.js"),
+        remarkPlugins: [require("mdx-mermaid")],
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
       }),
     ],
     [
-      'content-docs',
+      "content-docs",
       /** @type {import('@docusaurus/plugin-content-docs').Options} */
       ({
-        id: 'labs',
-        path: 'content/coursework',
-        routeBasePath: 'coursework',
-        editUrl: 'https://github.com/IT4063C/IT4063C.github.io/tree/main/',
+        id: "labs",
+        path: "content/coursework",
+        routeBasePath: "coursework",
+        editUrl: "https://github.com/IT4063C/IT4063C.github.io/tree/main/",
         editCurrentVersion: true,
-        sidebarPath: require.resolve('./content/coursework/sidebarsCoursework.js'),
-        remarkPlugins: [require('mdx-mermaid')],
+        sidebarPath: require.resolve(
+          "./content/coursework/sidebarsCoursework.js"
+        ),
+        remarkPlugins: [require("mdx-mermaid")],
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
       }),
     ],
     [
-      'content-docs',
+      "content-docs",
       /** @type {import('@docusaurus/plugin-content-docs').Options} */
       ({
-        id: 'syllabus',
-        path: 'content/syllabus',
-        routeBasePath: 'syllabus',
-        editUrl: 'https://github.com/IT4063C/IT4063C.github.io/tree/main/',
+        id: "syllabus",
+        path: "content/syllabus",
+        routeBasePath: "syllabus",
+        editUrl: "https://github.com/IT4063C/IT4063C.github.io/tree/main/",
         editCurrentVersion: true,
-        sidebarPath: require.resolve('./content/syllabus/sidebarsSyllabus.js'),
-        remarkPlugins: [require('mdx-mermaid')],
+        sidebarPath: require.resolve("./content/syllabus/sidebarsSyllabus.js"),
+        remarkPlugins: [require("mdx-mermaid")],
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
       }),
     ],
     [
-      'content-docs',
+      "content-docs",
       /** @type {import('@docusaurus/plugin-content-docs').Options} */
       ({
-        id: 'guides',
-        path: 'content/guides',
-        routeBasePath: 'guides',
-        editUrl: 'https://github.com/IT4063C/IT4063C.github.io/tree/main/',
+        id: "guides",
+        path: "content/guides",
+        routeBasePath: "guides",
+        editUrl: "https://github.com/IT4063C/IT4063C.github.io/tree/main/",
         editCurrentVersion: true,
-        sidebarPath: require.resolve('./content/guides/sidebarsGuides.js'),
-        remarkPlugins: [require('mdx-mermaid')],
+        sidebarPath: require.resolve("./content/guides/sidebarsGuides.js"),
+        remarkPlugins: [require("mdx-mermaid")],
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
       }),
@@ -138,7 +143,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       liveCodeBlock: {
-        playgroundPosition: 'bottom',
+        playgroundPosition: "bottom",
       },
       // announcementBar: {
       //   id: 'support_us',
@@ -151,37 +156,43 @@ const config = {
       // algolia: {
       //   appId: 'FWEZXU580G',
       //   apiKey: '0dc5cdf1f080b8c8be89878e5598fc45',
-      //   indexName: 'course-site',  
+      //   indexName: 'course-site',
       // },
+      image: "img/nbdoc_diagram.png",
       navbar: {
-        title: 'IT4063C',
+        title: "IT4063C",
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/python-analytics.png',
-        }, 
+          alt: "My Site Logo",
+          src: "img/python-analytics.png",
+        },
         items: [
           {
-            to: '/syllabus/info',
-            label: 'Syllabus',
+            to: "/syllabus/info",
+            label: "Syllabus",
           },
           {
-            to: '/coursework',
-            label: 'Coursework',
+            to: "/coursework",
+            label: "Coursework",
           },
           {
-            to: '/blog', 
-            label: 'Blog', 
-            position: 'left'
+            to: "/blog",
+            label: "Blog",
+            position: "left",
           },
           {
-            to: '/course-notes', 
-            label: 'Course Notes', 
-            position: 'left'
+            to: "/course-notes",
+            label: "Course Notes",
+            position: "left",
           },
           {
-            to: '/instructor', 
-            label: '👨‍🏫', 
-            position: 'left'
+            to: "/instructor",
+            label: "👨‍🏫",
+            position: "left",
+          },
+          {
+            to: "/nbnb/nb",
+            label: "🧪",
+            position: "left",
           },
           {
             label: "Guides",
@@ -205,72 +216,72 @@ const config = {
               {
                 to: "guides/misc",
                 label: "misc",
-              }
+              },
             ],
           },
           {
-            href: 'https://ygilany-solution-access.herokuapp.com',
-            label: 'Solutions Access',
-            position: 'right',
+            href: "https://ygilany-solution-access.herokuapp.com",
+            label: "Solutions Access",
+            position: "right",
           },
           {
-            href: 'https://it4063C.github.io/students/',
-            label: 'Students',
-            position: 'right',
+            href: "https://it4063C.github.io/students/",
+            label: "Students",
+            position: "right",
           },
         ],
       },
       footer: {
-        style: 'dark',
+        style: "dark",
         links: [
           {
-            title: 'Site map',
+            title: "Site map",
             items: [
               {
-                label: 'Syllabus',
-                to: '/syllabus/info',
+                label: "Syllabus",
+                to: "/syllabus/info",
               },
               {
-                label: 'Coursework',
-                to: '/coursework',
+                label: "Coursework",
+                to: "/coursework",
               },
             ],
           },
           {
-            title: 'Community',
+            title: "Community",
             items: [
               {
-                label: 'MS Teams',
-                href: 'https://teams.microsoft.com/l/channel/19%3a30e5da231a654578a9f04859d49dc410%40thread.tacv2/%25F0%259F%2586%2598%2520Help%2520-%2520Ask%2520Questions?groupId=24ca8848-d758-42dc-9a5f-85467f5ded68&tenantId=f5222e6c-5fc6-48eb-8f03-73db18203b63',
+                label: "MS Teams",
+                href: "https://teams.microsoft.com/l/channel/19%3a30e5da231a654578a9f04859d49dc410%40thread.tacv2/%25F0%259F%2586%2598%2520Help%2520-%2520Ask%2520Questions?groupId=24ca8848-d758-42dc-9a5f-85467f5ded68&tenantId=f5222e6c-5fc6-48eb-8f03-73db18203b63",
               },
               {
-                label: '⏰ Scheduler',
-                href: 'https://outlook.office365.com/owa/calendar/OfficeHours@mailuc.onmicrosoft.com/bookings/s/EjGKKRXxgE6Ppb4z3AH9lg2',
+                label: "⏰ Scheduler",
+                href: "https://outlook.office365.com/owa/calendar/OfficeHours@mailuc.onmicrosoft.com/bookings/s/EjGKKRXxgE6Ppb4z3AH9lg2",
               },
               {
-                label: '✉️ Email',
-                href: 'mailto:yahya.gilany@uc.edu',
+                label: "✉️ Email",
+                href: "mailto:yahya.gilany@uc.edu",
               },
             ],
           },
           {
-            title: 'More',
+            title: "More",
             items: [
               {
-                label: 'Solutions Access',
-                href: 'https://ygilany-solution-access.herokuapp.com',
+                label: "Solutions Access",
+                href: "https://ygilany-solution-access.herokuapp.com",
               },
               {
-                label: 'Classwork Repo',
-                href: '#',
+                label: "Classwork Repo",
+                href: "#",
               },
               {
-                label: 'GitHub Organization',
-                href: 'https://github.com/IT4063C/',
+                label: "GitHub Organization",
+                href: "https://github.com/IT4063C/",
               },
               {
-                label: 'GitHub Assignment',
-                href: 'https://github.com/IT4063C-Students',
+                label: "GitHub Assignment",
+                href: "https://github.com/IT4063C-Students",
               },
             ],
           },
@@ -282,8 +293,6 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
-
-
 };
 
 module.exports = config;

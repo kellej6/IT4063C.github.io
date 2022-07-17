@@ -13,10 +13,7 @@
 
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
-  notes: [
-    "index",
-    "git/index"
-  ]
+  notes: ["index", "git/index", "nb"],
 };
 
 module.exports = sidebars;
