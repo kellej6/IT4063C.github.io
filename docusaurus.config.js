@@ -190,11 +190,6 @@ const config = {
             position: "left",
           },
           {
-            to: "/nbnb/nb",
-            label: "🧪",
-            position: "left",
-          },
-          {
             label: "Guides",
             items: [
               {
