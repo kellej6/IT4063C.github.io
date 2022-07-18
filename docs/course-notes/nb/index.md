@@ -352,8 +352,16 @@ plt.plot(range(20), range(20))
 plt.plot(range(20), [x+1 for x in range(20)])
 plt.show()
 ```
+
+<CodeOutputBlock lang="python">
+
+```
     
-![png](_nb_files/output_33_0.png)
+![png](_index_files/output_33_0.png)
+    
+```
+
+</CodeOutputBlock>
 
 You can even have interactive charts with altair.  Please note that all interactive plotting libraries may not work due to collisions between the static site generator and the plotting library.  If you encounter issues, we suggest saving your plot as an image file to disk then displaying it with a markdown cell.
 
