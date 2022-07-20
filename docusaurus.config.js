@@ -30,10 +30,10 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve(
-            "./docs/course-notes/sidebarsCourseNotes.js"
+            "./docs/ta/sidebarsTA.js"
           ),
-          path: "docs/course-notes",
-          routeBasePath: "course-notes",
+          path: "docs/ta",
+          routeBasePath: "ta",
           editUrl: "https://github.com/IT4063C/IT4063C.github.io/tree/main/",
           remarkPlugins: [require("mdx-mermaid")],
           showLastUpdateAuthor: true,
@@ -74,12 +74,14 @@ const config = {
       "content-docs",
       /** @type {import('@docusaurus/plugin-content-docs').Options} */
       ({
-        id: "ta",
-        path: "content/ta",
-        routeBasePath: "ta",
+        id: "course-notes",
+        path: "content/course-notes",
+        routeBasePath: "course-notes",
         editUrl: "https://github.com/IT4063C/IT4063C.github.io/tree/main/",
         editCurrentVersion: true,
-        sidebarPath: require.resolve("./content/ta/sidebarsTA.js"),
+        sidebarPath: require.resolve(
+          "./content/course-notes/sidebarsCourseNotes.js"
+        ),
         remarkPlugins: [require("mdx-mermaid")],
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
