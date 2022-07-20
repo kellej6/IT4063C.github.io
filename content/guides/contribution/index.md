@@ -1,6 +1,6 @@
 ---
 title: Contribution Guide
-sidebar_position: 4
+sidebar_position: 1
 ---
 
 ## What Should I know before making updates to this project?
@@ -15,7 +15,7 @@ This site is generated using `Docusaurus`. This allows me to edit almost all pag
   * guides
   * syllabus
 
-  ![layout](contribution/layout.png)
+  ![layout](layout.png)
 
 ## How can I contribute?
 ### Reporting Issues

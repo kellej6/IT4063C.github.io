@@ -238,6 +238,10 @@ const config = {
                 label: "Coursework",
                 to: "/coursework",
               },
+              {
+                label: "Contributing",
+                to: "/guides/contribution",
+              },
             ],
           },
           {

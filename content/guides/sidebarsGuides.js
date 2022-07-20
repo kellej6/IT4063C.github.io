@@ -14,9 +14,9 @@
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
   allInOne: [
+    'contribution/index',
     'code-style',
     'datasets',
-    'contribution',
     'misc'
   ]
 };
