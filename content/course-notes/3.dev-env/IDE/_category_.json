@@ -2,6 +2,6 @@
   "position": 6,
   "label": "IDE",
   "collapsible": true,
-  "collapsed": false,
+  "collapsed": true,
   "className": "red"
 }

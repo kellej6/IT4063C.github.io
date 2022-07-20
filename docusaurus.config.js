@@ -199,10 +199,6 @@ const config = {
                 label: "Code Style Guide",
               },
               {
-                to: "guides/env-setup",
-                label: "Tools",
-              },
-              {
                 to: "guides/datasets",
                 label: "Datasets",
               },
