@@ -17,7 +17,8 @@ const sidebars = {
     'contribution/index',
     'code-style',
     'datasets',
-    'misc'
+    'misc',
+    'resources/index',
   ]
 };
 
