@@ -1180,7 +1180,7 @@ divide(6, 'a')
 <CodeOutputBlock lang="python">
 
     a: 6 b: a
-    ype error:
+    Type error:
     unsupported operand type(s) for /: 'int' and 'str'
     This will run no matter what
 
