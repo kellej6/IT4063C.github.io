@@ -24,3 +24,5 @@ sidebar_label: '2. Refreshers'
 - [ ] Build the Assignments and Exercises, with Resources.
 
 https://towardsdatascience.com/heres-how-to-run-sql-in-jupyter-notebooks-f26eb90f3259
+
+https://docs.google.com/presentation/d/1mLVkQxah9asdKhnTNpcUSYBOuKGSWE_d3MJ5nYuTw9U/edit#slide=id.g4ec462c2ad_0_476
