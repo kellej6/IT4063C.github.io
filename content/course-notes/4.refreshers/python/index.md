@@ -1068,12 +1068,10 @@ greeting()
 ```python
 # creating a function that requires a parameter
 def root_on(school):
-    if school == "USC":
-        print("Go Trojans!")
-    elif school == "LSU":
-        print("Go Bulldogs!")
-    elif school == "Stanford":
-        print("Go Cardinal!")
+    if school == "UC":
+        print("Go Bearcats!")
+    elif school == "OSU":
+        print("Go Buckeyes!")
     else:
         print("Go team!")
 ```
@@ -1081,12 +1079,12 @@ def root_on(school):
 
 ```python
 # calling the function
-root_on("Stanford")
+root_on("UC")
 ```
 
 <CodeOutputBlock lang="python">
 
-    Go Cardinal!
+    Go Bearcats!
 
 
 </CodeOutputBlock>
@@ -1107,13 +1105,100 @@ def root_on2(school):
 
 ```python
 # calling the fucntion
-my_team = root_on2("USC")
+my_team = root_on2("UC")
 print("You can do it! {}".format(my_team))
 ```
 
 <CodeOutputBlock lang="python">
 
-    You can do it! Go Trojans!
+    You can do it! Go Bearcat!
+
+
+</CodeOutputBlock>
+
+### Lambda function
+A lambda function is a small anonymous function.
+
+A lambda function can take any number of arguments, but can only have one expression.
+
+
+```python
+# creating a 'lambda' fuction
+aFunction = lambda x: x * x
+print(aFunction(10))
+```
+
+<CodeOutputBlock lang="python">
+
+    100
+
+
+</CodeOutputBlock>
+
+## Try, Except, and Else Statements
+
+
+```python
+# creating a fucntion
+def divide(a,b):
+    print("a: {} b: {}".format(a, b))
+    try:
+        result = a / b
+    except (ZeroDivisionError) as err:
+        print("Divide by zero:")
+        print(err)
+    except (TypeError) as err:
+        print("Type error:")
+        print(err)
+    else:
+        print(f"{a} divided by {b} is {result}")     # function strings in python
+    finally:
+        print("This will run no matter what")
+```
+
+
+```python
+# calling the fucntion and passing arguments
+divide(6,2)
+```
+
+<CodeOutputBlock lang="python">
+
+    a: 6 b: 2
+    6 divided by 2 is 3.0
+    This will run no matter what
+
+
+</CodeOutputBlock>
+
+
+```python
+# calling the fucntion and passing arguments
+divide(6, 'a')
+```
+
+<CodeOutputBlock lang="python">
+
+    a: 6 b: a
+    ype error:
+    unsupported operand type(s) for /: 'int' and 'str'
+    This will run no matter what
+
+
+</CodeOutputBlock>
+
+
+```python
+# calling the fucntion and passing arguments
+divide(6,0)
+```
+
+<CodeOutputBlock lang="python">
+
+    a: 6 b: 0
+    Divide by zero:
+    division by zero
+    This will run no matter what
 
 
 </CodeOutputBlock>
