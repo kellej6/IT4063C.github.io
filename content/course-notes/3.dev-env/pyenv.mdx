@@ -1,0 +1,72 @@
+---
+sidebar_position: 3.2
+title: Pyenv
+---
+import Figure from '@site/src/components/Figure';
+import BrowserWindow from '@site/src/components/BrowserWindow';
+
+## Overview
+pyenv is a python installation manager. It allows you to install and run multiple python installations, on the same machine. pyenv manages the different versions for you, so that you will avoid the chaos illustrated in the above picture. Don't ever again install a python version any other way!
+
+To setup a new env. using pyenv
+
+1. Make sure pyenv has the python version you want to use
+    ```bash
+    pyenv versions
+    ```
+    * If the list doesn't include the version you want, then we'll need to Install it
+    
+    ```bash
+    pyenv install <version>
+    ```
+    e.g. `pyenv install 3.10.5`
+
+2. Create a new virtual env.
+    ```bash
+    pyenv virtualenv <version> <env_name>
+    ```
+
+    e.g. `pyenv virtualenv 3.10.5 my_env`
+
+3. Activate the virtual env.
+    ```bash
+    pyenv activate <env_name>
+    ```
+    e.g. `pyenv activate my_env`
+
+    * You can also use `pyenv shell <env_name>` to activate the virtual env.
+    * You can also use `pyenv deactivate` to deactivate the virtual env.
+
+    ```bash
+    pyenv shell my_env
+    ```
+    e.g. `pyenv shell my_env`
+
+4. You can also use `pyenv global <version>` to set the global version.
+    ```bash
+    pyenv global <version>
+    ```
+    e.g. `pyenv global 3.10.5`
+
+5. You can also use `pyenv uninstall <env_name>` to uninstall the virtual env.
+    ```bash
+    pyenv uninstall <env_name>
+    ```
+    e.g. `pyenv uninstall my_env`
+
+6. You can set a local version using `pyenv local <version>`
+    ```bash
+    pyenv local <version>
+    ```
+    e.g. `pyenv local 3.10.5`
+    *  This will create a file named `.pyenv-local` in the current directory.
+    *  This file will contain the version you want to use.
+
+<BrowserWindow>
+
+![Pyenv pyramid](./assets/pyenv-pyramid.webp)
+
+</BrowserWindow>
+
+<Figure caption="Pyenv" src={require("./assets/pyenv-pyramid.webp").default} />
+https://realpython.com/intro-to-pyenv/
