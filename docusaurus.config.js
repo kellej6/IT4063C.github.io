@@ -170,29 +170,18 @@ const config = {
         items: [
           {
             to: "/syllabus/info",
-            label: "Syllabus",
-          },
-          {
-            to: "/coursework",
-            label: "Coursework",
-          },
-          {
-            to: "/blog",
-            label: "Blog",
-            position: "left",
+            label: "📚 Syllabus",
           },
           {
             to: "/course-notes",
-            label: "Course Notes",
-            position: "left",
+            label: "📝 Course Notes",
           },
           {
-            to: "/instructor",
-            label: "👨‍🏫",
-            position: "left",
+            to: "/coursework",
+            label: "💯 Coursework",
           },
           {
-            label: "Guides",
+            label: "🧭 Guides",
             items: [
               {
                 to: "guides/code-style",
@@ -211,6 +200,14 @@ const config = {
                 label: "misc",
               },
             ],
+          },
+          {
+            to: "/blog",
+            label: "🌐 Blog",
+          },
+          {
+            to: "/instructor",
+            label: "👨‍🏫",
           },
           {
             href: "https://ygilany-solution-access.herokuapp.com",
