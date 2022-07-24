@@ -214,11 +214,6 @@ const config = {
             label: "Solutions Access",
             position: "right",
           },
-          {
-            href: "https://it4063C.github.io/students/",
-            label: "Students",
-            position: "right",
-          },
         ],
       },
       footer: {
