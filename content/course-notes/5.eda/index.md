@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
-title: Files (CSV, ...)
+title: EDA
 draft: true
 ---
+test
