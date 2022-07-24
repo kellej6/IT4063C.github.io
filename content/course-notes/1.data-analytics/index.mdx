@@ -3,18 +3,53 @@ sidebar_position: 1
 title: Data Analytics
 ---
 
-## What will be covered in the course?
+## What is data analytics and why is it important?
+* Data is the new Oil.
+* Data Analytics is the refining process of the new Oil, to produce a much more valuable forms of Oil (insights).
+* Examples for Data Analytics and Science driving change:
+  * https://www.forbes.com/sites/blakemorgan/2018/07/16/how-amazon-has-re-organized-around-artificial-intelligence-and-machine-learning/
+  * https://www.nature.com/articles/d41586-020-01128-8
+  * https://www.nature.com/articles/d41586-020-00847-2
 
-## Data Analytics Pipeline
+## Types of Data Analytics
+![Types of analytics](./assets/types.png)
+* Descriptive analytics
+* Diagnostic analytics
+* Predictive analytics
+* And prescriptive analytics
 
-```mermaid
-flowchart LR
-  A[0. Ask] --> B[1. Prepare] --> C[3. Process] --> D[4. Analyze] --> E[5. Share] --> F[6. Act]
-```
+## Data analytics process
+
+![Analytics Process](./assets/process.png)
+
+1. Ask
+    1. Understanding the business needs
+    2. asking the relevant questions
+    3. defining the objectives of the project and the needs that are being tackled
+2.  Prepare
+    1. collecting the data from the available data sources
+    2. Data, Data, Data, … I can’t make bricks without clay . https://www.youtube.com/watch?v=2UQE5vR1Dc8 
+3. Process 
+    1. Data cleaning 
+    2. data reduction
+    3. data transformation
+    4. fixing inconsistencies and anomolies 
+    5. handeling missing data
+    6. If this is a machine learning analytics, project this step may include some more steps such as feature engineering, data normalization, … 
+4. Analyze
+    1. Exploratory data analysis
+    2. All trypes of analysis analysis
+5. Share
+    1. Storytelling with Visualizations
+6. Act
+    1. This is where the stakeholder could take information and start making decisions, 
+    2. request further analysis
+    3. identify KPM and monitoring procedures and so on.
+
+
+
 
 ![Types of Data Analytics](./assets/types-of-data-analytics.png)
-![Lifecycle](./assets/lifecycle.png)
-![5-steps-data-analysis-infographic](./assets/5-steps-data-analysis-infographic.jpeg)
 
 
 🟠 Book Reading reflection
@@ -36,3 +71,109 @@ https://www.freecodecamp.org/news/scalable-data-analytics-pipeline/
 
 [GitHub - Open Journalism](https://github.com/collections/open-journalism)
 How can you use what you're learning for social change?
+
+
+```mermaid
+flowchart LR
+  A[0. Ask] --> B[1. Prepare] --> C[3. Process] --> D[4. Analyze] --> E[5. Share] --> F[6. Act]
+```
+
+```mermaid
+flowchart TD
+   %% STYLES %%
+
+   %% NODES %%
+   A[Start]
+   env(Setting up the Environment)
+   svc(Source Version Control - git)
+   in-python(Installing Python)
+   python(Basics of Python)
+   data-sources[(Working with Data Sources)]
+      style data-sources fill: #f95
+   F(Files)
+   G(Relational Databases)
+   H(non-Relational Databases)
+   I(REST API)
+   correlate{{Correlating Data}}
+   K(Apply Basics of Statistics)
+   viz(Visualizing Data)
+      style viz fill:#f9f,stroke:#333,stroke-width:4px
+   graphtypes[Graph Types]
+   N[Pie]
+   O[Bar]
+   P[Chart 3]
+   story(Telling the Story of Data)
+
+   %% SUB GRAPHS %%
+   subgraph ENV [Environment Setup]
+     direction LR
+     svc --> in-python --> python
+   end
+
+   subgraph DATA-SOURCES [Data Sources]
+     direction LR
+     F --> G --> H --> I
+   end
+
+   subgraph CHARTS [Chart Types]
+     direction LR
+     N --> O --> P
+   end
+
+   %% DIAGRAM %%
+   A --> env
+   env --> ENV
+   ENV --> data-sources
+   data-sources --> DATA-SOURCES 
+   DATA-SOURCES --> correlate
+   correlate --> K
+   K --> viz
+   viz --> graphtypes
+   graphtypes --> CHARTS
+   CHARTS --> story
+
+```
+
+```mermaid
+flowchart TB
+  START --> A[1. Capture] --> B[2. Process] --> C[3. Store] --> D[4. Analyze] --> E[5. Use] --> END
+      style START fill: #f95
+      style END fill: #f95
+
+  A --> CAPTURE
+  subgraph CAPTURE [Data Ingestion]
+    direction TB
+    A1[Cloud pub/sub]
+    A2[Data Transfer Service]
+    A3[Storage Transfer Service]
+    A1 --> A2 --> A3
+  end
+  B --> PROCESS
+  subgraph PROCESS[Streaming and Data Pipelines]
+    direction TB
+    B1[Cloud Data flow - Stream and Batch Processing]
+    B2[Cloud Data Proc - Hadoop + Spark]
+    B3[Data Prep]
+    B1 --> B2 --> B3
+  end
+  C --> STORE
+  subgraph STORE [Data Lake and Data warehousing]
+    direction TB
+    C1[Cloud Storage]
+    C2[Big Query Storage]
+    C1 --> C2
+  end
+  D --> ANALYZE
+  subgraph ANALYZE [Data Warehousing]
+    direction TB
+    D1[Big Query]
+    D2[Data Visualization]
+    D1 --> D2
+  end
+  E --> USE
+  subgraph USE [Advanced Analytics]
+    direction TB
+    E1[TensorFlow]
+  end
+
+```
