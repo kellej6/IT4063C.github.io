@@ -1,6 +1,6 @@
 ---
 sidebar_position: 0
-title: Notes
+title: 📝 About Course Notes
 ---
 
 These are some summary notes on the course material. They're not comprehensive. You're still expected to review the rest of the class material and videos.
