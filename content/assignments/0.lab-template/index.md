@@ -1,7 +1,8 @@
 ---
-title: Python Exercises
+title: Assignment Title
 sidebar_label: Overview
 sidebar_position: 1
+draft: true
 ---
 
 ## Learning Objectives

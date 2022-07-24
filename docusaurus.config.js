@@ -92,12 +92,12 @@ const config = {
       /** @type {import('@docusaurus/plugin-content-docs').Options} */
       ({
         id: "labs",
-        path: "content/coursework",
-        routeBasePath: "coursework",
+        path: "content/assignments",
+        routeBasePath: "assignments",
         editUrl: "https://github.com/IT4063C/IT4063C.github.io/tree/main/",
         editCurrentVersion: true,
         sidebarPath: require.resolve(
-          "./content/coursework/sidebarsCoursework.js"
+          "./content/assignments/sidebarsCoursework.js"
         ),
         remarkPlugins: [require("mdx-mermaid")],
         showLastUpdateAuthor: true,
@@ -177,8 +177,8 @@ const config = {
             label: "📝 Course Notes",
           },
           {
-            to: "/coursework",
-            label: "💯 Coursework",
+            to: "/assignments",
+            label: "💯 Assignments",
           },
           {
             label: "🧭 Guides",
@@ -232,8 +232,8 @@ const config = {
                 to: "/syllabus/info",
               },
               {
-                label: "Coursework",
-                to: "/coursework",
+                label: "Assignments",
+                to: "/assignments",
               },
               {
                 label: "Contributing",

@@ -2,6 +2,7 @@
 title: Git - Hello World
 sidebar_label: Overview
 sidebar_position: 1
+draft: true
 ---
 
 :::note
