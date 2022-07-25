@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "it4063c.github.io"
+version = "0.1.0"
+description = ""
+authors = ["Yahya Gilany <yahya.gilany@live.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+nbdoc = "0.0.54"
+altair = "^4.2.0"
+vega_datasets = "^0.9.0"
+pandas = "^1.4.3"
+numpy = "^1.23.1"
+ipykernel = "^6.15.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
