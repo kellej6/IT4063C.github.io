@@ -5,6 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 import React, { isValidElement } from "react";
+import MDXComponents from '@theme-original/MDXComponents';
 import Head from "@docusaurus/Head";
 import Link from "@docusaurus/Link";
 import CodeBlock from "@theme/CodeBlock";
@@ -24,7 +25,8 @@ function unwrapMDXElement(element) {
   return element;
 }
 
-const MDXComponents = {
+export default {
+  ...MDXComponents,
   head: (props) => {
     const unwrappedChildren = React.Children.map(props.children, (child) =>
       unwrapMDXElement(child)
@@ -57,13 +59,12 @@ const MDXComponents = {
       </Details>
     );
   },
-  h1: (props) => <Heading as="h1" {...props} />,
-  h2: (props) => <Heading as="h2" {...props} />,
-  h3: (props) => <Heading as="h3" {...props} />,
-  h4: (props) => <Heading as="h4" {...props} />,
-  h5: (props) => <Heading as="h5" {...props} />,
-  h6: (props) => <Heading as="h6" {...props} />,
+  // h1: (props) => <Heading as="h1" {...props} />,
+  // h2: (props) => <Heading as="h2" {...props} />,
+  // h3: (props) => <Heading as="h3" {...props} />,
+  // h4: (props) => <Heading as="h4" {...props} />,
+  // h5: (props) => <Heading as="h5" {...props} />,
+  // h6: (props) => <Heading as="h6" {...props} />,
   CodeOutputBlock,
   HTMLOutputBlock,
 };
-export default MDXComponents;

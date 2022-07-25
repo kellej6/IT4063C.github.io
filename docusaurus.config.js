@@ -52,7 +52,6 @@ const config = {
   ],
 
   plugins: [
-    "@docusaurus/theme-live-codeblock",
     [
       "content-docs",
       /** @type {import('@docusaurus/plugin-content-docs').Options} */
@@ -144,9 +143,6 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      liveCodeBlock: {
-        playgroundPosition: "bottom",
-      },
       // announcementBar: {
       //   id: 'support_us',
       //   content:
@@ -155,12 +151,6 @@ const config = {
       //   textColor: '#ffffff',
       //   isCloseable: false,
       // },
-      // algolia: {
-      //   appId: 'FWEZXU580G',
-      //   apiKey: '0dc5cdf1f080b8c8be89878e5598fc45',
-      //   indexName: 'course-site',
-      // },
-      image: "img/nbdoc_diagram.png",
       navbar: {
         title: "IT4063C",
         logo: {

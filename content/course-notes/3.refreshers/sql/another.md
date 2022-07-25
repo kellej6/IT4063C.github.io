@@ -1,172 +1,279 @@
 ---
-sidebar_position: 2.1
+sidebar_position: 2.2
 title: SQL Refresher
 sidebar_label: SQL2
 ---
 
-**SQL**, or Structured Query Language, is a language to talk to databases. It allows you to select specific data and to build complex reports. Today, SQL is a universal language of data. It is used in practically all technologies that process data.
+## Data types
+
+### Text types
+
+| Data type        | Description                                                                                                                                                                                                                                                                                      |
+|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| CHAR(size)       | Holds a fixed length string (can contain letters, numbers, and special characters). The fixed size is specified in parenthesis. Can store up to 255 characters                                                                                                                                   |
+| VARCHAR(size)    | Holds a variable length string (can contain letters, numbers, and special characters). The maximum size is specified in parenthesis. Can store up to 255 characters. Note: If you put a greater value than 255 it will be converted to a TEXT type                                               |
+| TINYTEXT         | Holds a string with a maximum length of 255 characters                                                                                                                                                                                                                                           |
+| TEXT             | Holds a string with a maximum length of 65,535 characters                                                                                                                                                                                                                                        |
+| BLOB             | For BLOBs (Binary Large OBjects). Holds up to 65,535 bytes of data                                                                                                                                                                                                                               |
+| MEDIUMTEXT       | Holds a string with a maximum length of 16,777,215 characters                                                                                                                                                                                                                                    |
+| MEDIUMBLOB       | For BLOBs (Binary Large OBjects). Holds up to 16,777,215 bytes of data                                                                                                                                                                                                                           |
+| LONGTEXT         | Holds a string with a maximum length of 4,294,967,295 characters                                                                                                                                                                                                                                 |
+| LONGBLOB         | For BLOBs (Binary Large OBjects). Holds up to 4,294,967,295 bytes of data                                                                                                                                                                                                                        |
+| ENUM(x,y,z,etc.) | Let you enter a list of possible values. You can list up to 65535 values in an ENUM list. If a value is inserted that is not in the list, a blank value will be inserted.Note: The values are sorted in the order you enter them.You enter the possible values in this format: ENUM('X','Y','Z') |
+| SET              | Similar to ENUM except that SET may contain up to 64 list items and can store more than one choice                                                                                                                                                                                               |
+
+### Number types
+
+| Data type       | Description                                                                                                                                                                                                                           |
+|-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| TINYINT(size)   | -128 to 127 normal. 0 to 255 UNSIGNED*. The maximum number of digits may be specified in parenthesis                                                                                                                                  |
+| SMALLINT(size)  | -32768 to 32767 normal. 0 to 65535 UNSIGNED*. The maximum number of digits may be specified in parenthesis                                                                                                                            |
+| MEDIUMINT(size) | -8388608 to 8388607 normal. 0 to 16777215 UNSIGNED*. The maximum number of digits may be specified in parenthesis                                                                                                                     |
+| INT(size)       | -2147483648 to 2147483647 normal. 0 to 4294967295 UNSIGNED*. The maximum number of digits may be specified in parenthesis                                                                                                             |
+| BIGINT(size)    | -9223372036854775808 to 9223372036854775807 normal. 0 to 18446744073709551615 UNSIGNED*. The maximum number of digits may be specified in parenthesis                                                                                 |
+| FLOAT(size,d)   | A small number with a floating decimal point. The maximum number of digits may be specified in the size parameter. The maximum number of digits to the right of the decimal point is specified in the d parameter                     |
+| DOUBLE(size,d)  | A large number with a floating decimal point. The maximum number of digits may be specified in the size parameter. The maximum number of digits to the right of the decimal point is specified in the d parameter                     |
+| DECIMAL(size,d) | A DOUBLE stored as a string , allowing for a fixed decimal point. The maximum number of digits may be specified in the size parameter. The maximum number of digits to the right of the decimal point is specified in the d parameter |
+
+### Date types
+
+| Data type   | Description                                                                                                                                                                                                                              |
+|-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| DATE()      | A date. Format: YYYY-MM-DDNote: The supported range is from '1000-01-01' to '9999-12-31'                                                                                                                                                 |
+| DATETIME()  | *A date and time combination. Format: YYYY-MM-DD HH:MI:SSNote: The supported range is from '1000-01-01 00:00:00' to '9999-12-31 23:59:59'                                                                                                |
+| TIMESTAMP() | *A timestamp. TIMESTAMP values are stored as the number of seconds since the Unix epoch ('1970-01-01 00:00:00' UTC). Format: YYYY-MM-DD HH:MI:SSNote: The supported range is from '1970-01-01 00:00:01' UTC to '2038-01-09 03:14:07' UTC |
+| TIME()      | A time. Format: HH:MI:SSNote: The supported range is from '-838:59:59' to '838:59:59'                                                                                                                                                    |
+| YEAR()      | A year in two-digit or four-digit format.Note: Values allowed in four-digit format: 1901 to 2155. Values allowed in two-digit format: 70 to 69, representing years from 1970 to 2069                                                     |
 
 
-:::note
 
-This cheatsheet is from 
-
-:::
-
-## SAMPLE DATA
-
-![Sample data](./01-sample-data.png)
-
-## QUERYING SINGLE TABLE
-
-Fetch all columns from the country table:
-```sql 
-SELECT *
-FROM country;
-```
-
-Fetch id and name columns from the city table:
+## Insert
+Selected fields
 ```sql
-SELECT id, name
-FROM city;
+insert into tkey_moral (id_moral_nr, moral_bez) 
+values 
+    (1, 'gut'), 
+    (2, 'schlecht'), 
+    (3, 'schlecht');
 ```
 
-Fetch city names sorted by the rating column in the default ASCending order:
+## Update
+Update by condition
 ```sql
-SELECT name
-FROM city
-ORDER BY rating [ASC];
+update tbl_kunde set name = 'Menzer' where name = 'Waltenspühl-Menzer'
+update tass_police set praem_stufe = 101 where praem_stufe = 108
 ```
 
-Fetch city names sorted by the rating column in the DESCending order:
+## Delete
+### All
 ```sql
-SELECT name
-FROM city
-ORDER BY rating DESC;
+delete from tbl_kunde
 ```
-
-## ALIASES
-
-### COLUMNS
+### Condition
 ```sql
-SELECT name AS city_name
-FROM city;
-```
-### TABLES
-```sql
-SELECT co.name, ci.name
-FROM city AS ci
-JOIN country AS co
-  ON ci.country_id = co.id;
-```
-## FILTERING THE OUTPUT
-### COMPARISON OPERATORS
-
-Fetch names of cities that have a rating above 3:
-```sql
-SELECT name
-FROM city
-WHERE rating > 3;
-```
-Fetch names of cities that are neither Berlin nor Madrid:
-```sql
-SELECT name
-FROM city
-WHERE name != 'Berlin'
-  AND name != 'Madrid';
+delete from tkey_moral where id_moral_nr = 4
+delete from tbl_kunde where vorname = 'Peter' and name = 'Fischer' or vorname = 'Martin' and name = 'Müller'
 ```
 
-### TEXT OPERATORS
-
-Fetch names of cities that start with a 'P' or end with an 's':
+## Select
+### Basic
 ```sql
-SELECT name
-FROM city
-WHERE name LIKE 'P%'
-  OR name LIKE '%s';
+select dt_jahr from dbo.tbl_stueck
 ```
-Fetch names of cities that start with any letter followed by 'ublin' (like Dublin in Ireland or Lublin in Poland):
+### Condition
 ```sql
-SELECT name
-FROM city
-WHERE name LIKE '%ublin';
+select dt_jahr from dbo.tbl_stueck where dt_jahr is not null
 ```
-### OTHER OPERATORS
-
-Fetch names of cities that have a population between 500K and 5M:
+### Order
 ```sql
-SELECT name
-FROM city
-WHERE population BETWEEN 500000 AND 5000000;
+select dt_jahr from dbo.tbl_stueck
+where dt_jahr is not null
+order by dt_jahr desc
 ```
-Fetch names of cities that don't miss a rating value:
+### Distinct
 ```sql
-SELECT name
-FROM city
-WHERE rating IS NOT NULL;
+select distinct dt_jahr from dbo.tbl_stueck
+where dt_jahr is not null
+order by dt_jahr asc
 ```
-Fetch names of cities that are in countries with IDs 1, 4, 7, or 8:
+### And Condition
 ```sql
-SELECT name
-FROM city
-WHERE country_id IN (1, 4, 7, 8);
+select * from tbl_stueck where dt_jahr = 1970 and dt_zeit > 3
 ```
-
-## QUERYING MULTIPLE TABLES
-
-### INNER JOIN
-
-JOIN (or explicitly INNER JOIN) returns rows that have matching values in both tables.
+### Between
 ```sql
-SELECT city.name, country.name
-FROM city
-[INNER] JOIN country
-  ON city.country_id = country.id;
+select * from tbl_stueck where dt_jahr = 1970 and dt_zeit between 3 and 10
 ```
-
-![Tables joined using INNER JOIN](./02-inner-join.png)
-### LEFT JOIN
-
-LEFT JOIN returns all rows from the left table with corresponding rows from the right table. If there's no matching row, NULLs are returned as values from the second table.
+### Like
 ```sql
-SELECT city.name, country.name
-FROM city
-LEFT JOIN country
-  ON city.country_id = country.id;
+select * from tbl_stueck where dt_stueck_titel like 'Let%'
 ```
-![Tables joined using LEFT JOIN](./03-left-join.png)
-
-### RIGHT JOIN
-RIGHT JOIN returns all rows from the right table with corresponding rows from the left table. If there's no matching row, NULLs are returned as values from the left table.
+### Count
 ```sql
-SELECT city.name, country.name
-FROM city
-RIGHT JOIN country
-  ON city.country_id = country.id;
+select count(dt_stueck_titel) from tbl_stueck where dt_stueck_titel like 'Let%'
 ```
-![Tables joined using RIGHT JOIN](./04-right-join.png)
-
-### FULL JOIN
-
-FULL JOIN (or explicitly FULL OUTER JOIN) returns all rows from both tables – if there's no matching row in the second table, NULLs are returned.
+### Having and without join
 ```sql
-SELECT city.name, country.name
-FROM city
-FULL [OUTER] JOIN country
-  ON city.country_id = country.id;
+select i.dt_name, count(s.dt_stueck_titel) from tbl_stueck as s, tkey_interpret as i
+where  s.fi_interpret = i.id_interpret
+group by i.dt_name
+having count(s.dt_stueck_titel) >10
+order by count(s.dt_stueck_titel) de
 ```
-![Tables joined using FULL JOIN](./05-full-join.png)
-
-### CROSS JOIN
-
-CROSS JOIN returns all possible combinations of rows from both tables. There are two syntaxes available.
+## Join the hard way
+### Inner Join
 ```sql
-SELECT city.name, country.name
-FROM city
-CROSS JOIN country;
+select s.dt_stueck_titel, i.dt_name
+from tbl_stueck as s, tkey_interpret as i
+where  s.fi_interpret = i.id_interpret
+order by s.dt_stueck_titel
 ```
+### Multi Join
 ```sql
-SELECT city.name, country.name
-FROM city, country;
+select sa.id_jahr, st.dt_stueck_titel, ip.dt_name
+from tbl_stueck as st, tass_stueck_sampler as ss, tkey_sampler as sa, tkey_interpret as ip
+where ss.id_fi_stueck_nr = st.id_stueck_nr 
+and ss.id_fi_jahr = sa.id_jahr
+and  st.fi_interpret = ip.id_interpret
+order by  st.dt_stueck_titel
 ```
-![Tables joined using CROSS JOIN](./06-cross-join.png)
+
+## Join the right way
+### Inner Equi Key Joining
+```sql
+select dt_stueck_titel, dt_name
+from tbl_stueck join tkey_interpret 
+on fi_interpret = id_interpret
+order by dt_stueck_titel
+```
+### Multi Inner Equi Key Joining
+```sql
+select id_fi_jahr, dt_stueck_titel, dt_name
+from tbl_stueck
+join tass_stueck_sampler on id_fi_stueck_nr = id_stueck_nr
+join tkey_interpret on fi_interpret = id_interpret
+order by  dt_stueck_titel
+```
+
+## About Joins
+![sql join summary](http://i.stack.imgur.com/hzl8e.png)
+```sql
+SELECT customers.id, customers.name, items.name, customers.state 
+FROM customers, items
+WHERE customers.id=seller_id
+ORDER BY customers.id
+```
+**Join tables** -> Joining two tables together in a query output. The third line is important because it shows how the two tables are related (in this case it is their key values).   
+
+```sql
+SELECT customers.name, items.name FROM customers
+LEFT OUTER JOIN items ON customers.id=seller_id
+```
+**LEFT/RIGHT OUTER JOIN** -> Takes the table left of the word 'LEFT' or 'RIGHT' (in this case customers) and joins it regardless of whether it has any values or not. So the above statement shows all users/customers, even if they aren't selling anything.  
+
+## Select with Subqueries 
+Select max and min values
+```sql
+select dt_stueck_titel as Titel, dt_zeit as Zeit
+from tbl_stueck
+where dt_zeit = (select max(dt_zeit) from tbl_stueck)
+or dt_zeit = (select min(dt_zeit) from tbl_stueck)
+order by dt_zeit;
+```
+Select with query in condition
+```sql
+select dt_stueck_titel as Titel, dt_zeit as Zeit
+from tbl_stueck
+where dt_zeit between (select avg(dt_zeit) from tbl_stueck)*0.9
+and (select avg(dt_zeit) from tbl_stueck)*1.1
+order by dt_zeit;
+```
+Select query as value
+```sql
+select dt_stueck_titel as Titel,
+dt_zeit/(select avg(dt_zeit) from tbl_stueck)*100 as Zeit
+from tbl_stueck
+where dt_stueck_titel = 'You Shook Me'
+```
+
+## Union
+Unify two result sets with a condition
+```sql
+select *  from
+(select dt_stueck_titel as titel, 'stück' as 'type' from tbl_stueck
+union
+select dt_name as titel,  'inter' as 'type' from tkey_interpret
+union
+select dt_stao as titel,  'stao' as 'type' from tkey_standort) as t
+where t.titel like '%boy%'
+```
+
+## Transactions
+Run a transaction
+```sql
+begin transaction
+update tass_police set bezahlt = 0 where id_fi_kunde = 3533 and id_fi_vers_art = 1700
+commit
+-- or rollback
+```
+
+## Variables
+Declare
+```sql
+DECLARE @veraenderung SMALLINT = 180;
+DECLARE @neue_summe INT;
+```
+
+## Function
+A function can be called from inside a statement just like any other function and can return a scalar value.
+
+Create - Get value from table
+```sql
+create function f_plic_bez()
+  returns decimal(10,2)
+  as begin
+  return (select sum(bezahlt) from tass_police)
+  end;
+go
+select  dbo.f_plic_bez() AS 'Summe aller bezahlten Leistungen'
+go
+```
+Drop
+```sql
+drop function f_bezahlt_versich
+```
+Create - With parameters
+```sql
+create function f_rabatt(@name varchar(40), @vers varchar(30))
+  returns int
+  as begin
+  return (select (praem_stufe-100)*10 from  tass_police
+  join tbl_kunde on id_fi_kunde = id_kunde
+  join tkey_versicherung on id_fi_vers_art = id_vers_art
+  where name = @name and vers_bez = @vers)
+  end
+```
+
+## Stored Procedure
+Stored procedures are stored as precompilated code (stored routine) and called by the programmer wherever it wants to fire. Stored procedure can return value(s).
+
+Create and execute
+```sql
+CREATE PROCEDURE p_polic_del @fname VARCHAR(30), @versich VARCHAR(30)
+  AS
+  BEGIN
+    DELETE FROM tass_police
+      FROM tbl_kunde, tkey_versicherung
+        WHERE name = @fname
+          AND id_kunde = id_fi_kunde
+          AND id_fi_vers_art = id_vers_art
+          AND vers_bez = @versich
+    IF @@ROWCOUNT = 0
+      PRINT 'Police existiert nicht.'
+      ELSE PRINT 'Löschung vollzogen.'
+  END
+GO
+
+EXECUTE p_polic_del 'Meier', 'Taggeld';
+```
+
