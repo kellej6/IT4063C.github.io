@@ -170,3 +170,163 @@ SELECT city.name, country.name
 FROM city, country;
 ```
 ![Tables joined using CROSS JOIN](./06-cross-join.png)
+
+## AGGREGATION AND GROUPING
+
+`GROUP BY` groups together rows that have the same values in specified columns. It computes summaries (aggregates) for each unique combination of values.
+
+![Table before and after aggregation](./08-aggregation.png)
+
+### AGGREGATE FUNCTIONS
+
+`avg(expr)` − average value for rows within the group
+`count(expr)` − count of values for rows within the group
+`max(expr)` − maximum value within the group
+`min(expr)` − minimum value within the group
+`sum(expr)` − sum of values within the group
+
+### EXAMPLE QUERIES
+
+Find out the number of cities:
+```sql
+SELECT COUNT(*)
+FROM city;
+```
+Find out the number of cities with non-null ratings:
+```sql
+SELECT COUNT(rating)
+FROM city;
+```
+Find out the number of distinctive country values:
+```sql
+SELECT COUNT(DISTINCT country_id)
+FROM city;
+```
+Find out the smallest and the greatest country populations:
+```sql
+SELECT MIN(population), MAX(population)
+FROM country;
+```
+Find out the total population of cities in respective countries:
+```sql
+SELECT country_id, SUM(population)
+FROM city
+GROUP BY country_id;
+```
+Find out the average rating for cities in respective countries if the average is above 3.0:
+```sql
+SELECT country_id, AVG(rating)
+FROM city
+GROUP BY country_id
+HAVING AVG(rating) > 3.0;
+```
+
+## SUBQUERIES
+
+A subquery is a query that is nested inside another query, or inside another subquery. There are different types of subqueries.
+
+### SINGLE VALUE
+
+The simplest subquery returns exactly one column and exactly one row. It can be used with comparison operators =, <, <=, >, or >=.
+
+This query finds cities with the same rating as Paris:
+```sql
+SELECT name
+FROM city
+WHERE rating = (
+  SELECT rating
+  FROM city
+  WHERE name = 'Paris'
+);
+```
+### MULTIPLE VALUES
+
+A subquery can also return multiple columns or multiple rows. Such subqueries can be used with operators IN, EXISTS, ALL, or ANY.
+
+This query finds cities in countries that have a population above 20M:
+```sql
+SELECT name
+FROM city
+WHERE country_id IN (
+  SELECT country_id
+  FROM country
+  WHERE population > 20000000
+);
+```
+### CORRELATED
+
+A correlated subquery refers to the tables introduced in the outer query. A correlated subquery depends on the outer query. It cannot be run independently from the outer query.
+
+This query finds cities with a population greater than the average population in the country:
+```sql
+SELECT *
+FROM city main_city
+WHERE population > (
+  SELECT AVG(population)
+  FROM city average_city
+  WHERE average_city.country_id = main_city.country_id
+);
+```
+This query finds countries that have at least one city:
+```sql
+SELECT name
+FROM country
+WHERE EXISTS (
+  SELECT *
+  FROM city
+  WHERE country_id = country.id
+);
+```
+
+## SET OPERATIONS
+
+Set operations are used to combine the results of two or more queries into a single result. The combined queries must return the same number of columns and compatible data types. The names of the corresponding columns can be different
+
+![Sample data for set operations](./09-sets-data.png)
+
+### UNION
+
+UNION combines the results of two result sets and removes duplicates. UNION ALL doesn't remove duplicate rows.
+
+This query displays German cyclists together with German skaters:
+```
+SELECT name
+FROM cycling
+WHERE country = 'DE'
+UNION / UNION ALL
+SELECT name
+FROM skating
+WHERE country = 'DE';
+```
+![UNION circles](./10-union.png)
+### INTERSECT
+
+INTERSECT returns only rows that appear in both result sets.
+
+This query displays German cyclists who are also German skaters at the same time:
+```sql
+SELECT name
+FROM cycling
+WHERE country = 'DE'
+INTERSECT
+SELECT name
+FROM skating
+WHERE country = 'DE';
+```
+![INTERSECT circles](./11-intersect.png)
+
+### EXCEPT
+
+EXCEPT returns only the rows that appear in the first result set but do not appear in the second result set.
+
+This query displays German cyclists unless they are also German skaters at the same time:
+```sql
+SELECT name
+FROM cycling
+WHERE country = 'DE'
+EXCEPT / MINUS
+SELECT name
+FROM skating
+WHERE country = 'DE';
+```
+![Except circles](./12-except.png)
