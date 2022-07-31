@@ -90,6 +90,7 @@ This repo provides an example of how to create blog posts and/or documentation w
   - [Running the documentation locally](#running-the-documentation-locally)
   - [Automatic publishing](#automatic-publishing)
   - [About](#about)
+  - [For Instructor](#for-instructor)
 
 <!-- /TOC -->
 
@@ -296,3 +297,7 @@ After you complete the tutorial, you should run through this list and make sure 
 ## About
 
 We use [nbdoc](https://github.com/outerbounds/nbdoc) as a notebook converter and testing utility, as well as [docusaurus](https://github.com/facebook/docusaurus) for the static site generator.  This technology is built using [nbdev](https://github.com/fastai/nbdev), a literate programming system.
+
+
+## For Instructor
+- Remember to branch out the repo into a semester branch so you have a history of the class repos for every semester.
