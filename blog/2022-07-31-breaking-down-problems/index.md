@@ -1,15 +1,22 @@
 ---
 slug: break-down-problems
-title: Breaking Down Problems into steps
-draft: true
+title: Breaking Down Problems into steps (wip 🚧)
+draft: false
 authors: [ygilany]
 tags: [Problem Solving]
 ---
+![Divide and Conquer](divide-and-conquer.webp)
+## Overview
+One of the first steps of any good critical thinking process is to take a big problem and break it down into smaller problems that you can actually solve.
+
+A big problem is nothing more than a collection of little problems. Knowing how to break down those problems will allow you to follow a divide an conquer approach to resolve your issue.
+
+## The Approach
 Before even touching the keyboard, grab a pen an paper and plan out the program you're working on and the steps you need to reach the desired outcome. (Fine! ..  you can use the keyboard, but a pen a paper will allow you to doodle freely).
 
 When starting to code, you can start with typing out comments of the steps that your program needs to follow. Make sure you know what you need to know for each of those steps. If you don't. That's the part you need to lookup. While your steps may change (sometimes completely) they will make sure to keep you on track.
 
-## Example
+## An Example
 You have an assignment that requires you to query data from a MS SQL Database, and visualize the results in a couple of charts.
 
 Rather, then Googling "How to query data from SQL and Visualize it using python", you can break down the assignment requirements into something that looks like this: (at any step you get stuck, you can search for)
