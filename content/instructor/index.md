@@ -25,3 +25,5 @@ http://www.socr.umich.edu/people/dinov/2017/Spring/DSPA_HS650/DSPA_Topics.html
 - Preparing data for exploration
 - When cleaning data Analyze Data for Bias and Credibility
 - What does it mean to have clean data
+
+- for the assignments, https://github.com/ccannon94/github-classroom-utilties/blob/master/addFile.py
