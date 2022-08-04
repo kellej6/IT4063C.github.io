@@ -1,5 +1,5 @@
 ---
-title: Contribution Guide
+title: 🗳️ Contribution Guide
 sidebar_position: 1
 ---
 

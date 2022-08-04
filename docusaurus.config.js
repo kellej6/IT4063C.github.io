@@ -19,10 +19,6 @@ const config = {
   deploymentBranch: "gh-pages",
   trailingSlash: false,
 
-  customFields: {
-    classType: `online`,
-  },
-
   presets: [
     [
       "classic",

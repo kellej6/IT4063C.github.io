@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-title: Interesting Datasets
+title: 🛢 Interesting Datasets
 ---
 
 ## Government Data

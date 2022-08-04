@@ -15,6 +15,7 @@
 const sidebars = {
   allInOne: [
     'contribution/index',
+    'FAQ/index',
     'code-style',
     'datasets',
     'misc',
