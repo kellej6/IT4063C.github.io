@@ -18,8 +18,8 @@ const sidebars = {
     'FAQ/index',
     'code-style',
     'datasets',
-    'misc',
     'resources/index',
+    'misc',
   ]
 };
 
