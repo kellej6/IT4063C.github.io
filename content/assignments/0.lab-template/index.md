@@ -27,3 +27,8 @@ In this tutorial we will be editing text/markdown files. You may use GitHub Desk
 
 
 **Let's start 🏁**
+
+
+## Rubrics
+![Part1](images/rubrics1.png)
+![Part2](images/rubrics2.png)
