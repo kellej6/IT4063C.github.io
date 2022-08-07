@@ -1,6 +1,6 @@
 ---
 title: Authoring Docs With Notebooks
-sidebar_position: 50
+sidebar_position: 3
 draft: true
 ---
 
@@ -345,6 +345,7 @@ You can generate plots with many plotting libraries, which will automatically sh
 
 ```python
 from matplotlib import pyplot as plt
+import seaborn as sns
 plt.plot(range(20), range(20))
 plt.plot(range(10), [x+1 for x in range(10)])
 plt.show()
@@ -353,9 +354,18 @@ plt.show()
 <CodeOutputBlock lang="python">
 
 
-    
-![png](_index_files/output_33_0.png)
-    
+    ---------------------------------------------------------------------------
+
+    ModuleNotFoundError                       Traceback (most recent call last)
+
+    /Users/gilanyym/git/Teaching/IT4063C/IT4063C.github.io/content/course-notes/50.nb/index.ipynb Cell 34 in <cell line: 2>()
+          <a href='vscode-notebook-cell:/Users/gilanyym/git/Teaching/IT4063C/IT4063C.github.io/content/course-notes/50.nb/index.ipynb#X45sZmlsZQ%3D%3D?line=0'>1</a> from matplotlib import pyplot as plt
+    ----> <a href='vscode-notebook-cell:/Users/gilanyym/git/Teaching/IT4063C/IT4063C.github.io/content/course-notes/50.nb/index.ipynb#X45sZmlsZQ%3D%3D?line=1'>2</a> import seaborne as sns
+          <a href='vscode-notebook-cell:/Users/gilanyym/git/Teaching/IT4063C/IT4063C.github.io/content/course-notes/50.nb/index.ipynb#X45sZmlsZQ%3D%3D?line=2'>3</a> plt.plot(range(20), range(20))
+          <a href='vscode-notebook-cell:/Users/gilanyym/git/Teaching/IT4063C/IT4063C.github.io/content/course-notes/50.nb/index.ipynb#X45sZmlsZQ%3D%3D?line=3'>4</a> plt.plot(range(10), [x+1 for x in range(10)])
+
+
+    ModuleNotFoundError: No module named 'seaborne'
 
 
 </CodeOutputBlock>
