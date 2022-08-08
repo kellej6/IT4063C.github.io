@@ -24,7 +24,9 @@ const config = {
       "@easyops-cn/docusaurus-search-local",
       {
         hashed: true,
-        language: ["en", "zh"],
+        docsRouteBasePath: ["syllabus","course-notes","assignments","guides"],
+        docsDir: ["content"],
+        language: ["en"],
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
       },
