@@ -51,8 +51,9 @@ const config = {
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
           editUrl: "https://github.com/IT4063C/IT4063C.github.io/tree/main/",
+          blogSidebarCount: "ALL",
+          blogSidebarTitle: "All Posts"
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
