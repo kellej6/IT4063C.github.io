@@ -2,19 +2,11 @@
    * Wait for document loaded before starting the execution
    */
 
-/*! ../../accessibility */
-
-/*! ../../assignWithDepth */
-
-/*! ../../commonDb */
-
 /*! ../../config */
 
 /*! ../../dagre-wrapper/index.js */
 
 /*! ../../diagrams/common/common */
-
-/*! ../../interactionDb */
 
 /*! ../../logger */
 
@@ -28,105 +20,25 @@
 
 /*! ../createLabel */
 
-/*! ../diagrams/c4/c4Db */
-
-/*! ../diagrams/c4/c4Renderer */
-
-/*! ../diagrams/c4/parser/c4Diagram */
-
-/*! ../diagrams/class/classDb */
-
-/*! ../diagrams/class/classRenderer */
-
-/*! ../diagrams/class/classRenderer-v2 */
-
-/*! ../diagrams/class/parser/classDiagram */
-
 /*! ../diagrams/class/svgDraw */
 
 /*! ../diagrams/common/common */
-
-/*! ../diagrams/er/erDb */
-
-/*! ../diagrams/er/erRenderer */
-
-/*! ../diagrams/er/parser/erDiagram */
-
-/*! ../diagrams/flowchart/flowDb */
-
-/*! ../diagrams/flowchart/flowRenderer */
-
-/*! ../diagrams/flowchart/flowRenderer-v2 */
-
-/*! ../diagrams/flowchart/parser/flow */
-
-/*! ../diagrams/gantt/ganttDb */
-
-/*! ../diagrams/gantt/ganttRenderer */
-
-/*! ../diagrams/gantt/parser/gantt */
-
-/*! ../diagrams/git/gitGraphAst */
-
-/*! ../diagrams/git/gitGraphDetector */
-
-/*! ../diagrams/git/gitGraphRenderer */
-
-/*! ../diagrams/git/parser/gitGraph */
-
-/*! ../diagrams/info/infoDb */
-
-/*! ../diagrams/info/infoRenderer */
-
-/*! ../diagrams/info/parser/info */
-
-/*! ../diagrams/pie/parser/pie */
-
-/*! ../diagrams/pie/pieDb */
-
-/*! ../diagrams/pie/pieRenderer */
-
-/*! ../diagrams/requirement/parser/requirementDiagram */
-
-/*! ../diagrams/requirement/requirementDb */
-
-/*! ../diagrams/requirement/requirementRenderer */
-
-/*! ../diagrams/sequence/parser/sequenceDiagram */
-
-/*! ../diagrams/sequence/sequenceDb */
-
-/*! ../diagrams/sequence/sequenceRenderer */
-
-/*! ../diagrams/state/parser/stateDiagram */
-
-/*! ../diagrams/state/stateDb */
-
-/*! ../diagrams/state/stateRenderer */
-
-/*! ../diagrams/state/stateRenderer-v2 */
-
-/*! ../diagrams/user-journey/journeyDb */
-
-/*! ../diagrams/user-journey/journeyRenderer */
-
-/*! ../diagrams/user-journey/parser/journey */
 
 /*! ../intersect/index.js */
 
 /*! ../logger */
 
-/*! ../mermaidAPI */
-
 /*! ../package.json */
 
 /*! ../utils */
 
-/*! ./Diagram */
+/*! ./../../../../node_modules/process/browser.js */
 
-/*! ./assignWithDepth */
+/*! ./../../../../node_modules/webpack/buildin/module.js */
 
-/*! ./c4Db */
+/*! ./../process/browser.js */
+
+/*! ./classDb */
 
 /*! ./clusters */
 
@@ -136,23 +48,23 @@
 
 /*! ./defaultConfig */
 
-/*! ./detectType */
-
-/*! ./diagram-api/detectType */
-
-/*! ./diagram-api/diagram-orchestration */
-
-/*! ./diagram-api/diagramAPI */
-
-/*! ./diagramAPI.js */
-
-/*! ./diagrams/c4/styles */
-
 /*! ./diagrams/class/classDb */
+
+/*! ./diagrams/class/classRenderer */
+
+/*! ./diagrams/class/classRenderer-v2 */
+
+/*! ./diagrams/class/parser/classDiagram */
 
 /*! ./diagrams/class/styles */
 
 /*! ./diagrams/common/common */
+
+/*! ./diagrams/er/erDb */
+
+/*! ./diagrams/er/erRenderer */
+
+/*! ./diagrams/er/parser/erDiagram */
 
 /*! ./diagrams/er/styles */
 
@@ -162,25 +74,61 @@
 
 /*! ./diagrams/flowchart/flowRenderer-v2 */
 
+/*! ./diagrams/flowchart/parser/flow */
+
 /*! ./diagrams/flowchart/styles */
 
 /*! ./diagrams/gantt/ganttDb */
 
 /*! ./diagrams/gantt/ganttRenderer */
 
+/*! ./diagrams/gantt/parser/gantt */
+
 /*! ./diagrams/gantt/styles */
+
+/*! ./diagrams/git/gitGraphAst */
+
+/*! ./diagrams/git/gitGraphRenderer */
+
+/*! ./diagrams/git/parser/gitGraph */
 
 /*! ./diagrams/git/styles */
 
+/*! ./diagrams/info/infoDb */
+
+/*! ./diagrams/info/infoRenderer */
+
+/*! ./diagrams/info/parser/info */
+
 /*! ./diagrams/info/styles */
+
+/*! ./diagrams/pie/parser/pie */
+
+/*! ./diagrams/pie/pieDb */
+
+/*! ./diagrams/pie/pieRenderer */
 
 /*! ./diagrams/pie/styles */
 
+/*! ./diagrams/requirement/parser/requirementDiagram */
+
+/*! ./diagrams/requirement/requirementDb */
+
+/*! ./diagrams/requirement/requirementRenderer */
+
 /*! ./diagrams/requirement/styles */
+
+/*! ./diagrams/sequence/parser/sequenceDiagram */
+
+/*! ./diagrams/sequence/sequenceDb */
 
 /*! ./diagrams/sequence/sequenceRenderer */
 
 /*! ./diagrams/sequence/styles */
+
+/*! ./diagrams/state/parser/stateDiagram */
+
+/*! ./diagrams/state/stateDb */
 
 /*! ./diagrams/state/stateRenderer */
 
@@ -188,11 +136,17 @@
 
 /*! ./diagrams/state/styles */
 
+/*! ./diagrams/user-journey/journeyDb */
+
 /*! ./diagrams/user-journey/journeyRenderer */
+
+/*! ./diagrams/user-journey/parser/journey */
 
 /*! ./diagrams/user-journey/styles */
 
 /*! ./edges */
+
+/*! ./erDb */
 
 /*! ./erMarkers */
 
@@ -202,9 +156,13 @@
 
 /*! ./flowDb */
 
+/*! ./ganttDb */
+
+/*! ./gitGraphAst */
+
 /*! ./id-cache.js */
 
-/*! ./interactionDb */
+/*! ./infoDb */
 
 /*! ./intersect-circle.js */
 
@@ -224,11 +182,11 @@
 
 /*! ./intersect/intersect-rect */
 
+/*! ./journeyDb */
+
 /*! ./logger */
 
 /*! ./markers */
-
-/*! ./mermaid */
 
 /*! ./mermaid-graphlib */
 
@@ -236,9 +194,35 @@
 
 /*! ./nodes */
 
-/*! ./parser/c4Diagram */
+/*! ./parser/classDiagram */
+
+/*! ./parser/erDiagram */
+
+/*! ./parser/flow */
+
+/*! ./parser/gantt */
+
+/*! ./parser/gitGraph */
+
+/*! ./parser/info */
+
+/*! ./parser/journey */
+
+/*! ./parser/pie */
+
+/*! ./parser/requirementDiagram */
+
+/*! ./parser/sequenceDiagram */
+
+/*! ./parser/stateDiagram */
+
+/*! ./pieDb */
+
+/*! ./requirementDb */
 
 /*! ./requirementMarkers */
+
+/*! ./sequenceDb */
 
 /*! ./shapes */
 
@@ -272,7 +256,7 @@
 
 /*! @braintree/sanitize-url */
 
-/*! @license DOMPurify 2.3.10 | (c) Cure53 and other contributors | Released under the Apache license 2.0 and Mozilla Public License 2.0 | github.com/cure53/DOMPurify/blob/2.3.10/LICENSE */
+/*! @license DOMPurify 2.3.0 | (c) Cure53 and other contributors | Released under the Apache license 2.0 and Mozilla Public License 2.0 | github.com/cure53/DOMPurify/blob/2.3.0/LICENSE */
 
 /*! Check if previously processed */
 
@@ -286,6 +270,86 @@
 
 /*! dompurify */
 
+/*! exports provided: LEVELS, log, setLogLevel */
+
+/*! exports provided: addClasses, addRelations, setConf, drawOld, draw, default */
+
+/*! exports provided: addToRender, addToRenderV2, default */
+
+/*! exports provided: bounds, drawActors, setConf, draw, default */
+
+/*! exports provided: calcThemeVariables, default */
+
+/*! exports provided: clear, insertEdgeLabel, positionEdgeLabel, intersection, insertEdge */
+
+/*! exports provided: clusterDb, clear, extractDecendants, validate, findNonClusterChild, adjustClustersAndEdges, extractor, sortNodesByHierarchy */
+
+/*! exports provided: configKeys, default */
+
+/*! exports provided: default */
+
+/*! exports provided: defaultConfig, updateCurrentConfig, setSiteConfig, saveConfigFromInitilize, updateSiteConfig, getSiteConfig, setConfig, getConfig, sanitize, addDirective, reset */
+
+/*! exports provided: detectInit, detectDirective, detectType, isSubstringInArray, interpolateToCurve, formatUrl, runFunc, getStylesFromArray, generateId, random, assignWithDepth, getTextObj, drawSimpleText, wrapLabel, calculateTextHeight, calculateTextWidth, calculateTextDimensions, calculateSvgSizeAttrs, configureSvgSize, initIdGeneratior, entityDecode, directiveSanitizer, default */
+
+/*! exports provided: draw, default */
+
+/*! exports provided: drawEdge, drawClass, parseMember, default */
+
+/*! exports provided: drawRect, drawFace, drawCircle, drawText, drawLabel, drawSection, drawTask, drawBackgroundRect, getTextObj, getNoteRect, default */
+
+/*! exports provided: drawRect, drawText, drawLabel, drawActor, anchorElement, drawActivation, drawLoop, drawBackgroundRect, insertArrowHead, insertArrowFilledHead, insertSequenceNumber, insertArrowCrossHead, getTextObj, getNoteRect, default */
+
+/*! exports provided: drawStartState, drawDivider, drawSimpleState, drawDescrState, addTitleAndBox, drawText, drawNote, drawState, drawEdge */
+
+/*! exports provided: encodeEntities, decodeEntities, default */
+
+/*! exports provided: getRows, removeScript, sanitizeCSS, sanitizeText, lineBreakRegex, hasBreaks, splitBreaks, evaluate, default */
+
+/*! exports provided: getThemeVariables */
+
+/*! exports provided: insertCluster, getClusterTitleWidth, clear, positionCluster */
+
+/*! exports provided: insertNode, setNodeElem, clear, positionNode */
+
+/*! exports provided: labelHelper, updateNodeBounds, insertPolygonShape */
+
+/*! exports provided: mkBorder */
+
+/*! exports provided: name, version, description, main, keywords, scripts, repository, author, license, standard, dependencies, devDependencies, files, yarn-upgrade-all, sideEffects, husky, default */
+
+/*! exports provided: parseDirective, addActor, addMessage, addSignal, getMessages, getActors, getActor, getActorKeys, getTitle, getTitleWrapped, enableSequenceNumbers, showSequenceNumbers, setWrap, autoWrap, clear, parseMessage, LINETYPE, ARROWTYPE, PLACEMENT, addNote, setTitle, apply, default */
+
+/*! exports provided: parseDirective, addClass, lookUpDomId, clear, getClass, getClasses, getRelations, addRelation, addAnnotation, addMember, addMembers, cleanupLabel, setCssClass, setLink, setClickEvent, bindFunctions, lineType, relationType, default */
+
+/*! exports provided: parseDirective, addState, clear, getState, getStates, logDocuments, getRelations, addRelation, cleanupLabel, lineType, relationType, default */
+
+/*! exports provided: parseDirective, clear, setAxisFormat, getAxisFormat, setTodayMarker, getTodayMarker, setDateFormat, enableInclusiveEndDates, endDatesAreInclusive, enableTopAxis, topAxisEnabled, getDateFormat, setExcludes, getExcludes, setTitle, getTitle, addSection, getSections, getTasks, addTask, findTaskById, addTaskOrg, setLink, setClass, setClickEvent, bindFunctions, default */
+
+/*! exports provided: parseDirective, clear, setTitle, getTitle, addSection, getSections, getTasks, addTask, addTaskOrg, default */
+
+/*! exports provided: parseDirective, default */
+
+/*! exports provided: parseDirective, lookUpDomId, addVertex, addSingleLink, addLink, updateLinkInterpolate, updateLink, addClass, setDirection, setClass, setLink, getTooltip, setClickEvent, bindFunctions, getDirection, getVertices, getEdges, getClasses, clear, setGen, defaultStyle, addSubGraph, getDepthFirstPos, indexNodes, getSubGraphs, firstGraph, default */
+
+/*! exports provided: render */
+
+/*! exports provided: set, get, keys, size, default */
+
+/*! exports provided: setConf, addVertices, addEdges, getClasses, draw, default */
+
+/*! exports provided: setConf, draw, bounds, drawTasks, default */
+
+/*! exports provided: setConf, draw, default */
+
+/*! exports provided: setConf, drawReqs, drawElements, draw, default */
+
+/*! exports provided: setConf, getClasses, draw, default */
+
+/*! exports provided: setDirection, setOptions, getOptions, commit, branch, merge, checkout, reset, prettyPrint, clear, getBranchesAsObjArray, getBranches, getCommits, getCommitsArray, getCurrentBranch, getDirection, getHead, default */
+
+/*! exports provided: setMessage, getMessage, setInfo, getInfo, default */
+
 /*! fs */
 
 /*! graphlib */
@@ -294,15 +358,13 @@
 
 /*! moment-mini */
 
+/*! no static exports found */
+
 /*! path */
 
 /*! sequence config was passed as #1 */
 
 /*! stylis */
-
-/*!********************!*\
-  !*** fs (ignored) ***!
-  \********************/
 
 /*!*********************!*\
   !*** external "d3" ***!
@@ -329,20 +391,12 @@
   \***********************/
 
 /*!************************!*\
-  !*** ./src/Diagram.js ***!
-  \************************/
-
-/*!************************!*\
   !*** ./src/mermaid.js ***!
   \************************/
 
 /*!************************!*\
   !*** external "dagre" ***!
   \************************/
-
-/*!*************************!*\
-  !*** ./src/commonDb.js ***!
-  \*************************/
 
 /*!*************************!*\
   !*** external "khroma" ***!
@@ -373,10 +427,6 @@
   \*****************************/
 
 /*!******************************!*\
-  !*** ./src/accessibility.js ***!
-  \******************************/
-
-/*!******************************!*\
   !*** ./src/defaultConfig.js ***!
   \******************************/
 
@@ -385,20 +435,8 @@
   \******************************/
 
 /*!******************************!*\
-  !*** ./src/interactionDb.js ***!
-  \******************************/
-
-/*!******************************!*\
   !*** external "moment-mini" ***!
   \******************************/
-
-/*!********************************!*\
-  !*** ./src/assignWithDepth.js ***!
-  \********************************/
-
-/*!*********************************!*\
-  !*** ./src/diagrams/c4/c4Db.js ***!
-  \*********************************/
 
 /*!*********************************!*\
   !*** ./src/diagrams/er/erDb.js ***!
@@ -413,7 +451,7 @@
   \**********************************/
 
 /*!***********************************!*\
-  !*** ./src/diagrams/c4/styles.js ***!
+  !*** (webpack)/buildin/module.js ***!
   \***********************************/
 
 /*!***********************************!*\
@@ -434,10 +472,6 @@
 
 /*!************************************!*\
   !*** ./src/dagre-wrapper/nodes.js ***!
-  \************************************/
-
-/*!************************************!*\
-  !*** ./src/diagrams/c4/svgDraw.js ***!
   \************************************/
 
 /*!************************************!*\
@@ -501,18 +535,6 @@
   \***************************************/
 
 /*!***************************************!*\
-  !*** ./src/diagram-api/detectType.js ***!
-  \***************************************/
-
-/*!***************************************!*\
-  !*** ./src/diagram-api/diagramAPI.js ***!
-  \***************************************/
-
-/*!***************************************!*\
-  !*** ./src/diagrams/c4/c4Renderer.js ***!
-  \***************************************/
-
-/*!***************************************!*\
   !*** ./src/diagrams/class/classDb.js ***!
   \***************************************/
 
@@ -539,6 +561,10 @@
 /*!****************************************!*\
   !*** ./src/diagrams/state/id-cache.js ***!
   \****************************************/
+
+/*!*****************************************!*\
+  !*** ./node_modules/process/browser.js ***!
+  \*****************************************/
 
 /*!*****************************************!*\
   !*** ./src/diagrams/git/gitGraphAst.js ***!
@@ -621,10 +647,6 @@
   \**********************************************/
 
 /*!**********************************************!*\
-  !*** ./src/diagrams/git/gitGraphDetector.js ***!
-  \**********************************************/
-
-/*!**********************************************!*\
   !*** ./src/diagrams/git/gitGraphRenderer.js ***!
   \**********************************************/
 
@@ -643,10 +665,6 @@
 /*!***********************************************!*\
   !*** ./src/diagrams/gantt/parser/gantt.jison ***!
   \***********************************************/
-
-/*!************************************************!*\
-  !*** ./src/diagrams/c4/parser/c4Diagram.jison ***!
-  \************************************************/
 
 /*!************************************************!*\
   !*** ./src/diagrams/class/classRenderer-v2.js ***!
@@ -673,10 +691,6 @@
   \************************************************/
 
 /*!**************************************************!*\
-  !*** ./src/diagram-api/diagram-orchestration.js ***!
-  \**************************************************/
-
-/*!**************************************************!*\
   !*** ./src/diagrams/flowchart/parser/flow.jison ***!
   \**************************************************/
 
@@ -695,6 +709,10 @@
 /*!***************************************************!*\
   !*** ./src/diagrams/sequence/sequenceRenderer.js ***!
   \***************************************************/
+
+/*!******************************************************!*\
+  !*** ./node_modules/node-libs-browser/mock/empty.js ***!
+  \******************************************************/
 
 /*!******************************************************!*\
   !*** ./src/diagrams/class/parser/classDiagram.jison ***!
