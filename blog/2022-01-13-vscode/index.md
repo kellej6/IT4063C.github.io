@@ -8,6 +8,8 @@ tags: [vscode, uses]
 In my demo videos, you may notice that my Visual Studio Code IDE, provides with me with a lot of cheaters, helpers, and utilities that makes development a little easier.
 In this post, I'm sharing some instructions for how you can setup you VSCode IDE with the same settings and extensions I have here.
 
+<!--truncate-->
+
 To get started:
 
 1. you're going to need to install the Settings [Sync Extension](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) on VSCode.

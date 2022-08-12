@@ -4,6 +4,7 @@ title: Breaking Down Problems into steps (wip 🚧)
 draft: false
 authors: [ygilany]
 tags: [Problem Solving]
+image: divide-and-conquer.webp
 ---
 ![Divide and Conquer](divide-and-conquer.webp)
 ## Overview
@@ -11,6 +12,7 @@ One of the first steps of any good critical thinking process is to take a big pr
 
 A big problem is nothing more than a collection of little problems. Knowing how to break down those problems will allow you to follow a divide an conquer approach to resolve your issue.
 
+<!--truncate-->
 ## The Approach
 Before even touching the keyboard, grab a pen an paper and plan out the program you're working on and the steps you need to reach the desired outcome. (Fine! ..  you can use the keyboard, but a pen a paper will allow you to doodle freely).
 
