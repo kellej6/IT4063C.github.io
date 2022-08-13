@@ -21,3 +21,16 @@
   align-items: center;
   justify-content: center;
 }
+
+.topBannerTitleText {
+  font-size: 3rem;
+  background: linear-gradient(45deg, #ffe620, #ffffff 80%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+html[data-theme='dark'] .topBannerTitleText {
+  background: linear-gradient(45deg, #399cff, #00ff95 80%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

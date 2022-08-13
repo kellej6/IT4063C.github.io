@@ -6,17 +6,24 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #152fac;
-  --ifm-color-primary-dark: #132a9b;
-  --ifm-color-primary-darker: #122892;
-  --ifm-color-primary-darkest: #0f2178;
-  --ifm-color-primary-light: #1734bd;
-  --ifm-color-primary-lighter: #1836c6;
-  --ifm-color-primary-lightest: #1b3de0;
+  --ifm-color-primary: #b10202;
+  --ifm-color-primary-dark: #9f0202;
+  --ifm-color-primary-darker: #960202;
+  --ifm-color-primary-darkest: #7c0101;
+  --ifm-color-primary-light: #c30202;
+  --ifm-color-primary-lighter: #cc0202;
+  --ifm-color-primary-lightest: #e60303;
   --docusaurus-highlighted-code-line-bg: rgb(176, 193, 240, 0.3);
 }
+
 [data-theme='dark'] {
-  --ifm-color-primary: #6499ef;
+  --ifm-color-primary: #ff9494;
+  --ifm-color-primary-dark: #ff6c6c;
+  --ifm-color-primary-darker: #ff5858;
+  --ifm-color-primary-darkest: #ff1b1b;
+  --ifm-color-primary-light: #ffbcbc;
+  --ifm-color-primary-lighter: #ffd0d0;
+  --ifm-color-primary-lightest: #ffffff;
   --docusaurus-highlighted-code-line-bg: rgb(100, 100, 100);
 }
 
