@@ -154,14 +154,13 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // announcementBar: {
-      //   id: 'support_us',
-      //   content:
-      //     'We are looking to revamp our docs, please fill <a target="_blank" rel="noopener noreferrer" href="#">this survey</a>',
-      //   backgroundColor: '#880000',
-      //   textColor: '#ffffff',
-      //   isCloseable: false,
-      // },
+      announcementBar: {
+        id: 'support_us',
+        content:'Fall 2022',
+        backgroundColor: 'var(--ifm-color-primary)',
+        textColor: '#ffffff',
+        isCloseable: false,
+      },
       navbar: {
         title: "IT4063C",
         logo: {

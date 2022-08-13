@@ -10,6 +10,7 @@
   overflow: hidden;
 }
 
+
 @media screen and (max-width: 966px) {
   .heroBanner {
     padding: 2rem;
@@ -30,7 +31,12 @@
 }
 
 html[data-theme='dark'] .topBannerTitleText {
-  background: linear-gradient(45deg, #399cff, #00ff95 80%);
+  background: linear-gradient(45deg, #ffffff, #d6d3d3 80%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+html[data-theme='dark'] .heroBanner {
+  background-color: #960202 !important;
+  color: white;
 }

@@ -6,6 +6,7 @@
 
 /* You can override the default Infima variables here. */
 :root {
+  --ifm-font-family-base: "Optimistic Display", system-ui, -apple-system, sans-serif;
   --ifm-color-primary: #b10202;
   --ifm-color-primary-dark: #9f0202;
   --ifm-color-primary-darker: #960202;
@@ -25,6 +26,32 @@
   --ifm-color-primary-lighter: #ffd0d0;
   --ifm-color-primary-lightest: #ffffff;
   --docusaurus-highlighted-code-line-bg: rgb(100, 100, 100);
+}
+
+/* Font */
+
+@font-face {
+  font-family: "Optimistic Display";
+  src: url("https://facebookmicrosites.github.io/design/public/fonts/OptimisticDisplayLight-199be98cf48e5b4c688356b08a02362c.woff2")
+    format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Optimistic Display";
+  src: url("https://facebookmicrosites.github.io/design/public/fonts/OptimisticDisplayRegular-b0e4e99f91efd0021c3ab8e4df0e6e1b.woff2")
+    format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Optimistic Display";
+  src: url("https://facebookmicrosites.github.io/design/public/fonts/OptimisticDisplayBold-3a50548145f36de582c3b36d9626f4d6.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
 }
 
 img {
