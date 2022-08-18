@@ -24,6 +24,12 @@
         "coursework"
       ]
     },
+    {
+      "icon": "buildkite",
+      "extensions": [
+        "content"
+      ]
+    },
   ],
   "workbench.colorCustomizations": {
     "activityBar.activeBackground": "#d01104",
