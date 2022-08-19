@@ -3,6 +3,8 @@ sidebar_position: 3
 title: 🛢 Interesting Datasets
 ---
 
+https://github.com/collections/open-data
+
 ## Government Data
 * [United States Government Open Data](https://data.gov/)
 * [United States Census Data](https://data.census.gov/cedsci/)
