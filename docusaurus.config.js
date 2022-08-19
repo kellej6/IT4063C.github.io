@@ -210,10 +210,6 @@ const config = {
             label: "🌐 Blog",
           },
           {
-            to: "/instructor",
-            label: "👨‍🏫",
-          },
-          {
             href: "https://ygilany-solution-access.herokuapp.com",
             label: "Solutions Access",
             position: "right",
