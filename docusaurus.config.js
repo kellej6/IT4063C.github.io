@@ -188,20 +188,20 @@ const config = {
             label: "🧭 Guides",
             items: [
               {
+                to: "guides/faq",
+                label: "FAQ",
+              },
+              {
+                to: "guides/contribution",
+                label: "Contribution Guide",
+              },
+              {
                 to: "guides/code-style",
                 label: "Code Style Guide",
               },
               {
                 to: "guides/datasets",
                 label: "Datasets",
-              },
-              {
-                to: "guides/contribution",
-                label: "Contribution Guide (extra credit)",
-              },
-              {
-                to: "guides/misc",
-                label: "misc",
               },
             ],
           },
@@ -229,10 +229,6 @@ const config = {
               {
                 label: "Assignments",
                 to: "/assignments",
-              },
-              {
-                label: "Contributing",
-                to: "/guides/contribution",
               },
             ],
           },
