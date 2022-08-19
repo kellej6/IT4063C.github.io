@@ -3,7 +3,12 @@ slug: vscode-extensions
 title: Visual Studio Code Settings and Extensions Sync
 authors: [ygilany]
 tags: [vscode, uses]
+draft: true
 ---
+
+:::caution
+This blog may be outdated. I may have stopped using many of those extensions already.
+:::
 
 In my demo videos, you may notice that my Visual Studio Code IDE, provides with me with a lot of cheaters, helpers, and utilities that makes development a little easier.
 In this post, I'm sharing some instructions for how you can setup you VSCode IDE with the same settings and extensions I have here.
