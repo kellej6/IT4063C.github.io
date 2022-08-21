@@ -1074,6 +1074,44 @@ print("You can do it! {}".format(my_team))
 
 </CodeOutputBlock>
 
+### Returning multiple values in the same function
+a single function can return multiple values in the same call. the return outputs are separated by commas - `,`
+
+
+```python
+def math_operations(a, b):
+    sum = a + b
+    diff = a - b
+    mul = a * b
+    div = a / b
+    return sum, diff, mul, div
+```
+
+
+```python
+# and you can call the function and assign the return values to variables
+num1 = 5
+num2 = 10
+sum, diff, mul, div = math_operations(num1, num2)
+print(
+    f"The sum is {sum}\n"
+    f"The difference is {diff}\n"
+    f"The multiplication gives {mul}\n"
+    f"The division gives {div}\n"
+)
+```
+
+<CodeOutputBlock lang="python">
+
+    The sum is 15
+    The difference is -5
+    The multiplication gives 50
+    The division gives 0.5
+    
+
+
+</CodeOutputBlock>
+
 ### Lambda function
 A lambda function is a small anonymous function.
 
