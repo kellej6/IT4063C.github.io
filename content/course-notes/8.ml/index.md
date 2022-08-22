@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: ml
+title: Machine Learning
 draft: true
 ---
 ## From Hands-on Machine Learning with Scikit-Learn, Keras, and TensorFlow
