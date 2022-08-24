@@ -25,7 +25,7 @@ Rather, then Googling "How to query data from SQL and Visualize it using python"
 
 A potential break down for this assignment might look something like this:
 1. Clone down the starting files of this project to my computer
-   1. Most assignments in this class would require you to ["clone"](course-notes/dev-env/git#2-cloning-a-repository-from-github) down a GitHub repository that contains some support files and configurations.
+   1. Most assignments in this class would require you to ["clone"](course-notes/git#2-cloning-a-repository-from-github) down a GitHub repository that contains some support files and configurations.
 2. Do I have all the project requirements and dependencies installed?
    1. The assignment instructions and the `README.md` files would contain mention any required setup steps.
 3. Do I have a database running? Local Database, Hosted Database
