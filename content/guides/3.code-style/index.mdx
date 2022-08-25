@@ -18,47 +18,7 @@ This is a *living document* that I will be updating as we go along.
 
 From when you begin programming it is essential that you follow the guidelines below - a good habit is much easier to get in to when you start!
 
-## No Dead code
-If it doesn't run, it's dead code.
 
-**Bad**
-```python
-# 🛑 Don't do this!
-def addToShoppingList(item):
-  # print('Shopping list before:', *shoppingList, sep='\n- ')
-  # print(f"Adding item", item)
-  shoppingList.add(item)
-  # print('hopping list after:', *shoppingList, sep='\n- ')
-```
-**Good**
-```python
-def addToShoppingList(item):
-  shoppingList.add(item)
-```
-- When you are debugging a problem, you might comment out some sections of your code.
-
-### Saving old versions with Git
-
-You might be worried about "losing" some experimental code that you want to "save" by commenting it out. However, this can cause confusion about which bits of code still work.
-
-If you want to save some code, remember that you can commit it using Git. It will then be saved it forever. If you decide to remove the code later you can delete it and make another commit. And if you want it back again, you can always look at the deleted code in the git history.
-
-### Don't leave unused variables
-
-As you write code, you may make changes to the variables that you are using. You may rename some variables, make some new variables or change how the variables are used. This may leave some variables that are _unused_.
-<!-- TODO: #18 Fix this -->
-```python
-def orderTaxi(pickUpTime):
-  driverName = getDriverName();
-  customerName = getCustomerName(); // 🛑 Don't do this!
-
-  print(f"{driverName} will pick you up at ${pickUpTime}`;
-}
-```
-
-In this example, the `customerName` variable isn't used anywhere.
-
-You should remove any variables that are unused. This is because if you (or someone else) is reading your code, it can be confusing if you see a variable and then find out later that it isn't used. It could make you think that there's a bug, because the variable must have been put there for a reason!
 
 ## Naming Variables and Functions
 
@@ -72,67 +32,68 @@ When thinking about whether a variable name is good, try to imagine that you are
 Do the variable names help explain what the code is supposed to do?
 :::
 
-## Use `camelCase`
 
-When writing JavaScript, programmers tend to use a convention called _`camelCase`_. This means starting your variable name with a lower case letter, and then every "word" after that starts with an upper case letter.
+### Avoid ambigious abbreviations
+Avoid mental mappings, acronyms and abbreviations (unless it's univerasally understood by everyone). Don't come up with your own; it's better to use a long name than a confusing one.
+```python
+# 🛑 Bad
+fna = 'Bob'
+cre_tmstp = 1621535852
+evtnm = 'IT Expo'
 
-- `startingLocation`
-- `timeToDestination`
-- `trafficOnRoute`
-
-By doing this it makes it easier to read variable name that have multiple "words".
-
-## Avoid short names
-
-Very short variable names can be difficult to understand since the purpose of the variable can be unclear. They are also difficult remember, especially if there are many similarly named variables. Try to avoid short names or abbreviations.
-
-Here are some examples of **bad** names that you should avoid:
-
-- Single letters like `x` or `y`
-- Abbreviations like `evt` instead of `event`
-- Generic names like `array` or `string`
-
-## Describe what the variable is/does
-
-A good variable name quickly explains what it represents to anyone reading the code. Try to describe what the variable is or what it does within in code.
-
-```js
-// 🛑 Try to avoid this
-let song = true;
-
-// ✅ This is better
-let isPlaying = true;
+# ✅ Good
+first_name = 'Bob'
+creation_timestamp = 1621535852
+event_name = 'IT Expo'
 ```
 
-In this example, the variable name `song` doesn't tell us what it is used for. The `isPlaying` variable name is better since it tells us whether a song is playing or not.
+### Use descriptive/intention-revealing names
 
-```js
-// 🛑 Try to avoid this
-function percentage() {
-  // ...
-}
+A good variable name quickly explains what it represents to anyone reading the code. Try to describe what the variable is or what it does within in code, and 
 
-// ✅ This is better
-function getPercentage() {
-  // ...
-}
+```python
+# 🛑 Bad
+song = True;
+
+# ✅ Good
+song_is_playing = True;
 ```
 
+Also, parameters of functions should also have names that properly represent what is going to be received into the function.
+
+```python
+# 🛑 Bad
+def is_old_enough(number):
+  return number > 18
+
+# ✅ Good
+def is_old_enough(year_of_birth):
+  return year_of_birth > 18
+```
+
+### Use verbs for function names
 In this example, the function calculates a percentage and returns it. Therefore it is good to name it using the "get" verb to show that it returns something.
+```python
+# 🛑 Bad
+def percentage():
+  return 100
 
-```js
-// 🛑 Try to avoid this
-function isOldEnough(number) {
-  // ...
-}
-
-// ✅ This is better
-function isOldEnough(yearOfBirth) {
-  // ...
-}
+# ✅ Good
+def getPercentage():
+  return 100
 ```
 
-Finally, parameters of functions should also have names that properly represent what is going to be received into the function.
+### Don't use different words for the same concept
+```python
+# 🛑 Bad
+def get_name(): pass
+def fetch_age(): pass
+
+# ✅ Good
+def get_name(): pass
+def get_age(): pass
+```
+
 
 ## Avoid Long Functions
 
@@ -150,13 +111,49 @@ For more details you can read these useful articles
 
 - (The Art of Writing Small and Plain Functions)[https://dmitripavlutin.com/the-art-of-writing-small-and-plain-functions/]
 
+
+## No Dead code
+If it doesn't run, it's dead code. When you are debugging a problem, you might comment out some sections of your code. When you're done debugging, take it out.
+
+
+**Bad**
+```python
+# 🛑 Don't do this!
+def add_to_shopping_list(item):
+  # print('Shopping list before:', *shoppingList, sep='\n- ')
+  # print(f"Adding item", item)
+  shopping_list.add(item)
+  # print('hopping list after:', *shoppingList, sep='\n- ')
+```
+**Good**
+```python
+def add_to_shopping_list(item):
+  shopping_list.add(item)
+```
+
+### Saving old versions with Git
+
+You might be worried about "losing" some experimental code that you want to "save" by commenting it out. However, this can cause confusion about which bits of code still work.
+
+If you want to save some code, remember that you can commit it using Git. It will then be saved it forever. If you decide to remove the code later you can delete it and make another commit. And if you want it back again, you can always look at the deleted code in the git history.
+
+### Don't leave unused variables
+
+As you write code, you may make changes to the variables that you are using. You may rename some variables, make some new variables or change how the variables are used. This may leave some variables that are _unused_.
+<!-- TODO: #18 Fix this -->
+```python
+def order_taxi(pick_up_time):
+  driver_name = get_driver_name();
+  customer_name = get_customer_name(); # 🛑 Don't do this!
+
+  print(f"{driverName} will pick you up at ${pickUpTime}`;
+}
+```
+
+In this example, the `customerName` variable isn't used anywhere.
+
+You should remove any variables that are unused. This is because if you (or someone else) is reading your code, it can be confusing if you see a variable and then find out later that it isn't used. It could make you think that there's a bug, because the variable must have been put there for a reason!
+
 ## References:
 I compiled this list from a number of sources:
 - https://www.cs.cmu.edu/~213/codeStyle.html
-
-
-## Before you start
-
-### Using PyLint to format code automatically
-
-Some of the guidelines are so common that there are automatic tools to do it for you! One of these tools is called PyLint. You should have installed this tool when you [set up your VS Code extensions](#Link-to-setup-guide).
