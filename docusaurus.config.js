@@ -148,6 +148,20 @@ const config = {
         showLastUpdateTime: true,
       }),
     ],
+    [
+      "content-docs",
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      ({
+        id: "others",
+        path: "content/other",
+        routeBasePath: "/",
+        editUrl: "https://github.com/IT4063C/IT4063C.github.io/tree/main/",
+        editCurrentVersion: true,
+        remarkPlugins: [require("mdx-mermaid")],
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+      }),
+    ],
   ],
 
   stylesheets: [
@@ -230,6 +244,10 @@ const config = {
                 label: "Assignments",
                 to: "/assignments",
               },
+              {
+                label: "Credits",
+                to: "/credits",
+              },
             ],
           },
           {
@@ -237,7 +255,7 @@ const config = {
             items: [
               {
                 label: "MS Teams",
-                href: "https://teams.microsoft.com/l/channel/19%3a30e5da231a654578a9f04859d49dc410%40thread.tacv2/%25F0%259F%2586%2598%2520Help%2520-%2520Ask%2520Questions?groupId=24ca8848-d758-42dc-9a5f-85467f5ded68&tenantId=f5222e6c-5fc6-48eb-8f03-73db18203b63",
+                href: "https://teams.microsoft.com/l/channel/19%3a976a811940c84a6aac3dd4c88a4567bf%40thread.tacv2/%25E2%259D%2593Ask%2520Questions?groupId=aea6a338-ecb8-42d7-94d9-5a4af5419a73&tenantId=f5222e6c-5fc6-48eb-8f03-73db18203b63",
               },
               {
                 label: "⏰ Scheduler",
@@ -256,17 +274,17 @@ const config = {
                 label: "Solutions Access",
                 href: "https://ygilany-solution-access.herokuapp.com",
               },
-              {
-                label: "Classwork Repo",
-                href: "#",
-              },
+              // {
+              //   label: "Classwork Repo",
+              //   href: "#",
+              // },
               {
                 label: "GitHub Organization",
                 href: "https://github.com/IT4063C/",
               },
               {
-                label: "GitHub Assignment",
-                href: "https://github.com/IT4063C-Students",
+                label: "GitHub Student Org",
+                href: "https://github.com/IT4063C-Fall22",
               },
             ],
           },
