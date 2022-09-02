@@ -1,0 +1,50 @@
+---
+sidebar_position: 3
+title: Poetry
+---
+## Overview
+> Poetry is a tool for dependency management and packaging in Python. It allows you to declare the libraries your project depends on and it will manage (install/update) them for you. [^1]
+
+* Poetry is very similar to PipEnv.
+* It, also, doesn't come with Python by default, so you'll need to install it first.
+* Two major benfits over pip are (same as pipenv):
+  - Dependencies are installed in a virtualenv, so you don't have to worry about installing them in the system path.
+  - It automatically captures installed dependencies in files to generate an exact replica of the environment packages.
+    * I'd then check the dependeinces file into my code repository and is always available for me to use and share.
+    * Unlike in pip where you specifically need to freeze a snapshot of the entire virtual env with all of its dependencies.
+    * It generates 2 files: `poetry.lock` and `pyproject.toml`.
+
+## Cheatsheet
+* To start using Poetry, you'll need to initialize a project.
+  - `poetry init`
+  - `poetry install`
+
+*  To install a package
+    ```bash
+    poetry add <package>
+    ```
+
+* To install a specific version of a package
+    ```bash
+    poetry add <package>@<version>
+    ```
+
+* To upgrade a package
+    ```bash
+    poetry update <package>
+    ```
+
+* To uninstall a package
+    ```bash
+    poetry remove <package>
+    ```
+
+* To Search for packages
+    ```bash
+    poetry search <package>
+    ```
+
+* [All Other commands can be found here](https://python-poetry.org/docs/cli/)
+
+-----------------------
+[^1] [Poetry Documentation](https://python-poetry.org/docs/)

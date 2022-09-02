@@ -1,0 +1,45 @@
+---
+sidebar_position: 1
+title: Pip
+---
+
+* PIP is a standard python command for package management systems. shipping with Python since Python 2.7.
+* this is used to install, upgrade, and uninstall the software packages that are written in python. 
+* PIP package manager is similar to another tool that comes with another language. You might be familiar with them as JavaScript uses npm, Dot Net uses NuGet, and Ruby uses gem.
+* We download and install packages and from a unified “repository” called PyPi (Python Package Index), from which all library installations are dispatched.
+
+## Cheatsheet
+* To install a package from PyPi
+    ```
+    pip install <package_name>
+    ```
+
+* To install a specific version
+    ```
+    pip install <package_name>==<version>
+    ```
+
+* To upgrade a package
+    ```
+    pip install --upgrade <package_name>
+    ```
+
+* To uninstall a package
+    ```
+    pip uninstall <package_name>
+    ```
+
+* To list all the packages installed
+    ```
+    pip list
+    ```
+
+* To search for a package
+    ```
+    pip search <package_name>
+    ```
+
+* To generate a requirements.txt file
+    ```
+    pip freeze > requirements.txt
+    ``` 

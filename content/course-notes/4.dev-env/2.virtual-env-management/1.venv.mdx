@@ -1,0 +1,34 @@
+---
+sidebar_position: 1
+title: Venv
+---
+* **Venv** is a virtual environment manager for Python.
+* It's been shipping with python since 3.5
+* The workflow for all virtualenvs is:
+  - Create it
+  - Activate it
+  - Install packages and do your developement things.
+  - Deactivate it
+  - Delete it (if you want)
+
+## Cheatsheet
+* To Create a Virtual Environment:
+    ```bash
+    python -m venv <virtual env name>
+    ```
+
+* Activate Your Virtual Environment
+  ```bash
+  <virtual env>/bin/activate
+  ```
+  OR
+  `activate.bat` for windows
+
+* Use any Package manager to install packages.
+* Make sure you run you python files and notebook based off of the virtual environment you created.
+* To Deactivate Your Virtual Environment
+  ```bash
+  deactivate
+  ```
+  OR
+  `deactivate.bat` for windows
