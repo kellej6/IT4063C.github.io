@@ -6,6 +6,7 @@ title: 🛢 Datasets
 ## Collections
 * [RapidAPI Hub](https://rapidapi.com/hub)
   * A massive collection of APIs that you can utilize.
+* [COVID-19 Developer Resource Center](https://www.programmableweb.com/coronavirus-covid-19)
 * [Data.World](https://data.world/datasets/opendata)
 * [Open data datasets on GitHub](https://github.com/collections/open-data)
 * [Awesome Public Datasets](https://github.com/awesomedata/awesome-public-datasets)
