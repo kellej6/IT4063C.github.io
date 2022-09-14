@@ -7,12 +7,18 @@ title: 🛢 Datasets
 * [RapidAPI Hub](https://rapidapi.com/hub)
 * [ProgrammableWeb](https://www.programmableweb.com/content/search)
   * Two massive collections of APIs that you can utilize.
-* [COVID-19 Developer Resource Center](https://www.programmableweb.com/coronavirus-covid-19)
 * [Data.World](https://data.world/datasets/opendata)
 * [Open data datasets on GitHub](https://github.com/collections/open-data)
 * [Awesome Public Datasets](https://github.com/awesomedata/awesome-public-datasets)
 
-## Technology Related Datasets and APIs
+## Public Health
+* [COVID-19 Developer Resource Center](https://www.programmableweb.com/coronavirus-covid-19)
+
+## Climate and Disasters
+* [Earthquake Catalog](https://earthquake.usgs.gov/fdsnws/event/1/?ref=springboard)
+* [Weather.gov API](https://www.weather.gov/documentation/services-web-api)
+
+## Technology
 * [Stack Overflow Annual Developer Survey](https://insights.stackoverflow.com/survey)
 
 ## Government Data
