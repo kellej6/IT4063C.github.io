@@ -16,13 +16,14 @@ title: 🛢 Datasets
 
 ## Climate and Disasters
 * [Earthquake Catalog](https://earthquake.usgs.gov/fdsnws/event/1/?ref=springboard)
+  * [Tutorial Article](https://holypython.com/api-6-earthquake-data/)
 * [Weather.gov API](https://www.weather.gov/documentation/services-web-api)
 
 ## Technology
 * [Stack Overflow Annual Developer Survey](https://insights.stackoverflow.com/survey)
 
 ## Government Data
-* [United States Government Open Data](https://data.gov/)
+* [United States Government Open Data (Data.gov)](https://data.gov/)
 * [United States Census Data](https://data.census.gov/cedsci/)
 * [United States on GitHub](https://github.com/unitedstates)
 
