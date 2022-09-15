@@ -16,6 +16,11 @@ matplotlib = ">=3.5.1"
 selenium = "<=4.2.0"
 altair-saver = ">=0.5.0"
 watchdog = {extras = ["watchmedo"], version = "*"}
+sqlalchemy = "*"
+opendatasets = "*"
+sodapy = "*"
+pymongo = {extras = ["srv"], version = "*"}
+python-dotenv = "*"
 
 [dev-packages]
 
