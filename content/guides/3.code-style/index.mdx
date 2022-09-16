@@ -20,7 +20,7 @@ From when you begin programming it is essential that you follow the guidelines b
 
 
 
-## Naming Variables and Functions
+## ✅ Naming Variables and Functions
 
 Making our code understandable by others is critical to being a programmer. One of the main tools in our toolbox is good naming for our variables and function names.
 
@@ -95,7 +95,7 @@ def get_age(): pass
 ```
 
 
-## Avoid Long Functions
+## ✅ Avoid Long Functions
 
 Sometimes writing long functions are unavoidable, however most of the time is better to split a long function into a few shorter ones. 
 
@@ -112,7 +112,7 @@ For more details you can read these useful articles
 - (The Art of Writing Small and Plain Functions)[https://dmitripavlutin.com/the-art-of-writing-small-and-plain-functions/]
 
 
-## No Dead code
+## ✅ No Dead code
 If it doesn't run, it's dead code. When you are debugging a problem, you might comment out some sections of your code. When you're done debugging, take it out.
 
 
@@ -153,3 +153,29 @@ def order_taxi(pick_up_time):
 In this example, the `customerName` variable isn't used anywhere.
 
 You should remove any variables that are unused. This is because if you (or someone else) is reading your code, it can be confusing if you see a variable and then find out later that it isn't used. It could make you think that there's a bug, because the variable must have been put there for a reason!
+
+## ✅ Don't store secrets in code
+> Added to the guide on 16 Sept, 2022
+
+When you are writing code, you should never store any secrets in your code. This includes passwords, API keys, and other sensitive information.
+Per the [12 Factor App](https://12factor.net/config) methodology, secrets should be stored in environment variables.
+to achieve this, you can use the `os` module to get the values of environment variables. For example, if you have an environment variable called `API_KEY`, you can get the value of it using `os.getenv['API_KEY']`.
+
+```python
+import os
+
+API_KEY = os.getenv("API_KEY")
+```
+
+Another way to do this is to use a `.env` file. This is a file that contains environment variables. You can use the `python-dotenv` module to load the environment variables from the `.env` file.
+
+```python
+import os
+from dotenv import load_dotenv
+
+load_dotenv(override=True)
+
+API_KEY = os.getenv("API_KEY")
+```
+
+and remember to add the `.env` file to your `.gitignore` file so that it doesn't get committed to git.
