@@ -16,3 +16,15 @@ the main steps:
 
 ## Additional Links and Resources
 [Roadmap of mathematics for deep learning](https://towardsdatascience.com/the-roadmap-of-mathematics-for-deep-learning-357b3db8569b)
+
+
+
+- Diagnostic analysis
+
+  - Linear Regression
+  - Logistic Regression
+  - Linear Regression with Multiple Variables
+  - Logistic Regression with Multiple Variables
+  - Classification
+  - Correlation vs Causality
+  - Hypothesis Testing
