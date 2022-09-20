@@ -7,4 +7,5 @@ draft: true
 - Seaborn
 - Plotly
 - altair
+- https://plotnine.readthedocs.io/en/stable/
 - Tableau
